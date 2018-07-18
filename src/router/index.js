@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import BootstrapVue from 'bootstrap-vue'
 import HelloWorld from '@/components/HelloWorld'
-import test from '@/components/test'
+import home from '@/components/home'
 
 Vue.use(Router)
 
@@ -9,8 +10,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'test',
-      component: test
+      name: 'home',
+      component: home
     }
   ]
 })
