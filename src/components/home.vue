@@ -1,4 +1,5 @@
 <template>
+    <!-- Slideshow -->
     <div class="home">
         <div class="main-slider">
             <div class="display-table center-text">
@@ -7,10 +8,10 @@
                         <i class="small-icon icon icon-tie">
                         </i>
                         <h5 class="date">
-                            23 SETPEMBER 2017
+                            20 de octubre de 2017
                         </h5>
                         <h3 class="pre-title">
-                            Save The Date
+                            Agenda el día
                         </h3>
                         <h1 class="title">
                             Franklyn
@@ -25,64 +26,7 @@
             </div>
             <!-- display-table-->
         </div>
-        <!-- main-slider -->
-        <section class="section story-area center-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-1">
-                    </div>
-                    <div class="col-sm-10">
-                        <div class="heading">
-                            <h2 class="title">
-                                Our Story
-                            </h2>
-                            <span class="heading-bottom">
-                                <i class="icon icon-star">
-                                </i>
-                            </span>
-                        </div>
-                        <p class="desc margin-bottom">
-                            Every bride and groom wants an incomparable wedding combined with fantasy 
-					and style. We create stunning, one-of-a-kind events produced and styled to perfection. 
-					From traditional to modern, elegant and relaxed, we focus on any event we plan.
-                        </p>
-                    </div>
-                    <!-- col-sm-10 -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
-        <section class="section counter-area center-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="heading">
-                            <h2 class="title">
-                                Don't miss it!
-                            </h2>
-                            <span class="heading-bottom">
-                                <i class="color-white icon icon-star">
-                                </i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="remaining-time">
-                            <div id="clock">
-                            </div>
-                        </div>
-                        <!-- remaining-time -->
-                    </div>
-                    <!-- col-sm-10 -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
-        <!-- section -->
+        <!-- Story line -->
         <section class="section w-details-area center-text">
             <div class="container">
                 <div class="row">
@@ -91,7 +35,7 @@
                     <div class="col-sm-10">
                         <div class="heading">
                             <h2 class="title">
-                                Wedding Details
+                                Nuestra Historia
                             </h2>
                             <span class="heading-bottom">
                                 <i class="icon icon-star">
@@ -103,10 +47,10 @@
                                 <i class="icon icon-ciurclke">
                                 </i>
                                 <h4 class="title">
-                                    CEREMONY
+                                    20 de abril de 2013
                                 </h4>
                                 <p>
-                                    Look at the most passionate ceremony ever. We wish happiness to the wedding couple.
+                                    Nos hicimos novios.
                                 </p>
                             </div>
                             <!-- w-detail -->
@@ -114,7 +58,7 @@
                                 <i class="icon icon-wine-glass">
                                 </i>
                                 <h4 class="title">
-                                    TOAST & DINNER
+                                    15 de diciembre de 2017
                                 </h4>
                                 <p>
                                     Look at the most passionate ceremony ever. We wish happiness to the wedding couple.
@@ -125,10 +69,10 @@
                                 <i class="icon icon-cake">
                                 </i>
                                 <h4 class="title">
-                                    WEDDING CAKE
+                                    Fecha TBD
                                 </h4>
                                 <p>
-                                    Look at the most passionate ceremony ever. We wish happiness to the wedding couple.
+                                    Boda Civil
                                 </p>
                             </div>
                             <!-- w-detail -->
@@ -136,10 +80,10 @@
                                 <i class="icon icon-camera">
                                 </i>
                                 <h4 class="title">
-                                    PHOTOGRAPHY
+                                    20 de octubre
                                 </h4>
                                 <p>
-                                    Look at the most passionate ceremony ever. We wish happiness to the wedding couple.
+                                    Boda!
                                 </p>
                             </div>
                             <!-- w-detail -->
@@ -152,14 +96,14 @@
             </div>
             <!-- container -->
         </section>
-        <!-- section -->
+        <!-- ceremony -->
         <section class="section ceremony-area center-text">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="heading">
                             <h2 class="title">
-                                Wedding & Ceremonies
+                                Ceremonia
                             </h2>
                             <span class="heading-bottom">
                                 <i class="color-white icon icon-star">
@@ -168,14 +112,81 @@
                         </div>
                         <div class="ceremony margin-bottom">
                             <p class="desc">
-                                We assist our clients in creating memorable, magical 
-						celebrations that exceed expectations. Our personal approach ensures the weddings we 
-						plan are meaningful and truly reflect our clients as individuals, as couples, and states 
-						something about their shared values and sense of style.
+                                We assist our clients in creating memorable, magical
+                        celebrations that exceed expectations. Our personal approach ensures the weddings we
+                        plan are meaningful and truly reflect our clients as individuals, as couples, and states
+                        something about their shared values and sense of style.
                             </p>
                             <a class="border-btn" href="#">
                                 LEARN MORE
                             </a>
+                        </div>
+                    </div>
+                    <!-- col-sm-10 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </section>
+        <!-- Reception -->
+        <section class="section galery-area center-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <h2 class="title">
+                                Recepción
+                            </h2>
+                            <span class="heading-bottom">
+                                <i class="icon icon-star">
+                                </i>
+                            </span>
+                        </div>
+                        <div class="ceremony margin-bottom">
+                            <p>
+                                We assist our clients in creating memorable, magical
+                        celebrations that exceed expectations. Our personal approach ensures the weddings we
+                        plan are meaningful and truly reflect our clients as individuals, as couples, and states
+                        something about their shared values and sense of style.
+                            </p>
+                            <a class="border-btn" href="#">
+                                LEARN MORE
+                            </a>
+                        </div>
+                    </div>
+                    <!-- col-sm-10 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </section>
+        <!-- gifts -->
+        <section class="section gifts-area center-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <h2 class="title">
+                                Obsequios
+                            </h2>
+                            <span class="heading-bottom">
+                                <i class="color-white icon icon-star">
+                                </i>
+                            </span>
+                        </div>
+                        <div class="ceremony margin-bottom">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <button class="btn btn-circle btn-xl" type="button">
+                                        <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
+                                    </button>
+                                </div>
+                                <div class="col-sm">
+                                    <button class="btn btn-circle btn-xl" type="button">
+                                        <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- col-sm-10 -->
@@ -292,7 +303,7 @@
                 <div id="map" style="height:100%;">
                 </div>
             </div>
-            <!-- map-area 
+            <!-- map-area
             <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap">
             </script>
             -->
@@ -315,12 +326,12 @@
                     </p>
                     <div class="email-area">
                         <form>
-                            <input class="email-input" placeholder="Your Email" type="text">
+                            <!--<input class="email-input" placeholder="Your Email" type="text">
                                 <button class="submit-btn" type="submit">
                                     <i class="icon icon-email-plane">
                                     </i>
                                 </button>
-                            </input>
+                            </input>-->
                         </form>
                     </div>
                     <!-- email-area -->
@@ -386,7 +397,7 @@
                     </li>
                 </ul>
                 <p class="copyright">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
                     Copyright ©
                     <script>
                         document.write(new Date().getFullYear());
@@ -406,7 +417,7 @@
     </div>
 </template>
 <script>
-    export default {
+export default {
 
   name: 'test',
 
@@ -417,5 +428,3 @@
   }
 }
 </script>
-<style lang="css" scoped="">
-</style>
