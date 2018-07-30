@@ -13,7 +13,7 @@ export default {
 
 <style>
 @import 'https://fonts.googleapis.com/css?family=Playball%7CBitter';
-
+@import 'https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.js'
 @import '../src/assets/css/bootstrap.css';
 @import '../src/assets/css/fluidbox.min.css';
 @import '../src/assets/css/font-icon.css';

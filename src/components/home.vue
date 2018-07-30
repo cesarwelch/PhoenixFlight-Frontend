@@ -8,7 +8,7 @@
                         <i class="small-icon icon icon-tie">
                         </i>
                         <h5 class="date">
-                            20 de octubre de 2017
+                            20 de octubre de 2018
                         </h5>
                         <h3 class="pre-title">
                             Agenda el día
@@ -96,6 +96,36 @@
             </div>
             <!-- container -->
         </section>
+        <!-- Countdown -->
+        <section class="section counter-area center-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <h2 class="title">
+                                Don't miss it!
+                            </h2>
+                            <span class="heading-bottom">
+                                <i class="color-white icon icon-star">
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="remaining-time">
+                            <div id="clock">
+                            </div>
+                        </div>
+                        <!-- remaining-time -->
+                    </div>
+                    <!-- col-sm-10 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </section>
         <!-- ceremony -->
         <section class="section ceremony-area center-text">
             <div class="container">
@@ -111,15 +141,33 @@
                             </span>
                         </div>
                         <div class="ceremony margin-bottom">
-                            <p class="desc">
-                                We assist our clients in creating memorable, magical
+                            <div class="row">
+                                <div class="col-sm">
+                                    <p class="desc">
+                                        We assist our clients in creating memorable, magical
                         celebrations that exceed expectations. Our personal approach ensures the weddings we
                         plan are meaningful and truly reflect our clients as individuals, as couples, and states
                         something about their shared values and sense of style.
-                            </p>
-                            <a class="border-btn" href="#">
-                                LEARN MORE
-                            </a>
+                                    </p>
+                                </div>
+                                <div class="col-sm">
+                                    <GmapMap
+                                      :center="{lat:15.489157, lng:-88.045571}"
+                                      :zoom="17"
+                                      map-type-id="terrain"
+                                      style="width: 500px; height: 300px"
+                                    >
+                                      <GmapMarker
+                                        :key="index"
+                                        v-for="(m, index) in markers"
+                                        :position="m.position"
+                                        :clickable="true"
+                                        :draggable="true"
+                                        @click="center=m.position"
+                                      />
+                                    </GmapMap>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- col-sm-10 -->
@@ -177,9 +225,11 @@
                         <div class="ceremony margin-bottom">
                             <div class="row">
                                 <div class="col-sm">
-                                    <button class="btn btn-circle btn-xl" type="button">
+                                    <div class="gift-button">
+                                        <button class="btn btn-circle btn-xl" type="button">
                                         <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
                                     </button>
+                                    </div>
                                 </div>
                                 <div class="col-sm">
                                     <button class="btn btn-circle btn-xl" type="button">
@@ -417,12 +467,16 @@
     </div>
 </template>
 <script>
+   let markers = [{
+            position: {lat:15.489157, lng:-88.045571}
+          }];
 export default {
 
   name: 'test',
 
   data () {
     return {
+        markers: markers,
       msg: 'Welcome to Your Vue.js App'
     }
   }
