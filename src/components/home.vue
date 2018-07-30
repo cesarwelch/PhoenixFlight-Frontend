@@ -467,16 +467,17 @@
     </div>
 </template>
 <script>
-   let markers = [{
-            position: {lat:15.489157, lng:-88.045571}
-          }];
+let markers = [{
+  position: {lat: 15.489157, lng: -88.045571}
+}]
+
 export default {
 
   name: 'test',
 
   data () {
     return {
-        markers: markers,
+      markers: markers,
       msg: 'Welcome to Your Vue.js App'
     }
   }
