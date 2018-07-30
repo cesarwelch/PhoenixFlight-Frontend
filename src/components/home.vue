@@ -96,36 +96,6 @@
             </div>
             <!-- container -->
         </section>
-        <!-- Countdown -->
-        <section class="section counter-area center-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="heading">
-                            <h2 class="title">
-                                Don't miss it!
-                            </h2>
-                            <span class="heading-bottom">
-                                <i class="color-white icon icon-star">
-                                </i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="remaining-time">
-                            <div id="clock">
-                            </div>
-                        </div>
-                        <!-- remaining-time -->
-                    </div>
-                    <!-- col-sm-10 -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
         <!-- ceremony -->
         <section class="section ceremony-area center-text">
             <div class="container">
@@ -470,7 +440,6 @@
 let markers = [{
   position: {lat: 15.489157, lng: -88.045571}
 }]
-
 export default {
 
   name: 'test',
