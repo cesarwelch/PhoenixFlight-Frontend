@@ -37,9 +37,9 @@
     </section>
 </template>
 <script>
-	import maps from './maps.vue'
+import maps from './maps.vue'
 export default {
-components: {
+  components: {
     maps
   },
   name: 'reception',
