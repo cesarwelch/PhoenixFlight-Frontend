@@ -1,220 +1,16 @@
 <template>
     <!-- Slideshow -->
     <div class="home">
-        <div class="main-slider">
-            <div class="display-table center-text">
-                <div class="display-table-cell">
-                    <div class="slider-content">
-                        <i class="small-icon icon icon-tie">
-                        </i>
-                        <h5 class="date">
-                            20 de octubre de 2018
-                        </h5>
-                        <h3 class="pre-title">
-                            Agenda el día
-                        </h3>
-                        <h1 class="title">
-                            Franklyn
-                            <i class="icon icon-heart">
-                            </i>
-                            Maria José
-                        </h1>
-                    </div>
-                    <!-- slider-content-->
-                </div>
-                <!--display-table-cell-->
-            </div>
-            <!-- display-table-->
-        </div>
+        <main-slider></main-slider>
         <!-- Story line -->
-        <section class="section w-details-area center-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-1">
-                    </div>
-                    <div class="col-sm-10">
-                        <div class="heading">
-                            <h2 class="title">
-                                Nuestra Historia
-                            </h2>
-                            <span class="heading-bottom">
-                                <i class="icon icon-star">
-                                </i>
-                            </span>
-                        </div>
-                        <div class="wedding-details margin-bottom">
-                            <div class="w-detail right">
-                                <i class="icon icon-ciurclke">
-                                </i>
-                                <h4 class="title">
-                                    20 de abril de 2013
-                                </h4>
-                                <p>
-                                    Nos hicimos novios.
-                                </p>
-                            </div>
-                            <!-- w-detail -->
-                            <div class="w-detail left">
-                                <i class="icon icon-wine-glass">
-                                </i>
-                                <h4 class="title">
-                                    15 de diciembre de 2017
-                                </h4>
-                                <p>
-                                    Look at the most passionate ceremony ever. We wish happiness to the wedding couple.
-                                </p>
-                            </div>
-                            <!-- w-detail -->
-                            <div class="w-detail right">
-                                <i class="icon icon-cake">
-                                </i>
-                                <h4 class="title">
-                                    Fecha TBD
-                                </h4>
-                                <p>
-                                    Boda Civil
-                                </p>
-                            </div>
-                            <!-- w-detail -->
-                            <div class="w-detail left">
-                                <i class="icon icon-camera">
-                                </i>
-                                <h4 class="title">
-                                    20 de octubre
-                                </h4>
-                                <p>
-                                    Boda!
-                                </p>
-                            </div>
-                            <!-- w-detail -->
-                        </div>
-                        <!-- wedding-details -->
-                    </div>
-                    <!-- col-sm-10 -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
+        <story-line></story-line>
         <!-- ceremony -->
-        <section class="section ceremony-area center-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="heading">
-                            <h2 class="title">
-                                Ceremonia
-                            </h2>
-                            <span class="heading-bottom">
-                                <i class="color-white icon icon-star">
-                                </i>
-                            </span>
-                        </div>
-                        <div class="ceremony margin-bottom">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <p class="desc">
-                                        We assist our clients in creating memorable, magical
-                        celebrations that exceed expectations. Our personal approach ensures the weddings we
-                        plan are meaningful and truly reflect our clients as individuals, as couples, and states
-                        something about their shared values and sense of style.
-                                    </p>
-                                </div>
-                                <div class="col-sm">
-                                    <GmapMap
-                                      :center="{lat:15.489157, lng:-88.045571}"
-                                      :zoom="17"
-                                      map-type-id="terrain"
-                                      style="width: 500px; height: 300px"
-                                    >
-                                      <GmapMarker
-                                        :key="index"
-                                        v-for="(m, index) in markers"
-                                        :position="m.position"
-                                        :clickable="true"
-                                        :draggable="true"
-                                        @click="center=m.position"
-                                      />
-                                    </GmapMap>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col-sm-10 -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
+        <ceremony></ceremony>
         <!-- Reception -->
-        <section class="section galery-area center-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="heading">
-                            <h2 class="title">
-                                Recepción
-                            </h2>
-                            <span class="heading-bottom">
-                                <i class="icon icon-star">
-                                </i>
-                            </span>
-                        </div>
-                        <div class="ceremony margin-bottom">
-                            <p>
-                                We assist our clients in creating memorable, magical
-                        celebrations that exceed expectations. Our personal approach ensures the weddings we
-                        plan are meaningful and truly reflect our clients as individuals, as couples, and states
-                        something about their shared values and sense of style.
-                            </p>
-                            <a class="border-btn" href="#">
-                                LEARN MORE
-                            </a>
-                        </div>
-                    </div>
-                    <!-- col-sm-10 -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
+        <reception></reception>
         <!-- gifts -->
-        <section class="section gifts-area center-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="heading">
-                            <h2 class="title">
-                                Obsequios
-                            </h2>
-                            <span class="heading-bottom">
-                                <i class="color-white icon icon-star">
-                                </i>
-                            </span>
-                        </div>
-                        <div class="ceremony margin-bottom">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <div class="gift-button">
-                                        <button class="btn btn-circle btn-xl" type="button">
-                                        <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
-                                    </button>
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <button class="btn btn-circle btn-xl" type="button">
-                                        <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col-sm-10 -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
+        <gifts></gifts>
+        <!-- tbd -->
         <section class="section galery-area center-text">
             <div class="container">
                 <div class="row">
@@ -437,17 +233,20 @@
     </div>
 </template>
 <script>
-let markers = [{
-  position: {lat: 15.489157, lng: -88.045571}
-}]
+
+import mainSlider from './main-slider.vue'
+import storyLine from './story-line.vue'
+import ceremony from './ceremony.vue'
+import reception from './reception.vue'
+import gifts from './gifts.vue'
+
 export default {
-
-  name: 'test',
-
+  components: {
+    mainSlider, storyLine, ceremony, reception, gifts
+  },
+  name: 'home',
   data () {
     return {
-      markers: markers,
-      msg: 'Welcome to Your Vue.js App'
     }
   }
 }

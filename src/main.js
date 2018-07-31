@@ -7,12 +7,15 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// Maps addon
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE', // prod AIzaSyCAwABS_h8FDkLZuBsST1PcC_o-oVkVguM
     libraries: 'places'
   }
 })
+
+// Components
 
 /* eslint-disable no-new */
 new Vue({
