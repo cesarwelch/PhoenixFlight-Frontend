@@ -10,72 +10,9 @@
         <reception></reception>
         <!-- gifts -->
         <gifts></gifts>
-        <!-- tbd -->
-        <section class="section galery-area center-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="heading">
-                            <h2 class="title">
-                                Our Gallery
-                            </h2>
-                            <span class="heading-bottom">
-                                <i class="icon icon-star">
-                                </i>
-                            </span>
-                        </div>
-                        <div class="image-gallery">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6">
-                                    <a data-fluidbox="" href="images/gallery-1-600x400.jpg">
-                                        <img alt="Gallery Image" class="margin-bottom" src="../../src/assets/images/gallery-1-600x400.jpg"/>
-                                    </a>
-                                </div>
-                                <!-- col-sm-4 -->
-                                <div class="col-md-4 col-sm-6">
-                                    <a data-fluidbox="" href="images/gallery-2-600x400.jpg">
-                                        <img alt="Gallery Image" class="margin-bottom" src="../../src/assets/images/gallery-2-600x400.jpg"/>
-                                    </a>
-                                </div>
-                                <!-- col-sm-4 -->
-                                <div class="col-md-4 col-sm-6">
-                                    <a data-fluidbox="" href="images/gallery-3-600x400.jpg">
-                                        <img alt="Gallery Image" class="margin-bottom" src="../../src/assets/images/gallery-3-600x400.jpg"/>
-                                    </a>
-                                </div>
-                                <!-- col-sm-4 -->
-                                <div class="col-md-4 col-sm-6">
-                                    <a data-fluidbox="" href="images/gallery-4-600x400.jpg">
-                                        <img alt="Gallery Image" class="margin-bottom" src="../../src/assets/images/gallery-4-600x400.jpg"/>
-                                    </a>
-                                </div>
-                                <!-- col-sm-4 -->
-                                <div class="col-md-4 col-sm-6">
-                                    <a data-fluidbox="" href="images/gallery-5-600x400.jpg">
-                                        <img alt="Gallery Image" class="margin-bottom" src="../../src/assets/images/gallery-5-600x400.jpg"/>
-                                    </a>
-                                </div>
-                                <!-- col-sm-4 -->
-                                <div class="col-md-4 col-sm-6">
-                                    <a data-fluidbox="" href="images/gallery-1-600x400.jpg">
-                                        <img alt="Gallery Image" class="margin-bottom" src="../../src/assets/images/gallery-1-600x400.jpg"/>
-                                    </a>
-                                </div>
-                                <!-- col-sm-4 -->
-                            </div>
-                            <!-- row -->
-                            <a class="btn-2 margin-bottom gallery-btn" href="#">
-                                VIEW ALL GALLERY
-                            </a>
-                        </div>
-                        <!-- image-gallery -->
-                    </div>
-                    <!-- col-sm-10 -->
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
+        <!-- RSVP -->
+        <rsvp></rsvp>
+
         <section class="contact-area">
             <div class="contact-wrapper section float-left">
                 <div class="container">
@@ -233,16 +170,16 @@
     </div>
 </template>
 <script>
-
 import mainSlider from './main-slider.vue'
 import storyLine from './story-line.vue'
 import ceremony from './ceremony.vue'
 import reception from './reception.vue'
 import gifts from './gifts.vue'
+import rsvp from './rsvp.vue'
 
 export default {
   components: {
-    mainSlider, storyLine, ceremony, reception, gifts
+    mainSlider, storyLine, ceremony, reception, gifts, rsvp
   },
   name: 'home',
   data () {

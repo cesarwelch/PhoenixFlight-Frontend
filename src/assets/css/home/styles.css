@@ -63,7 +63,7 @@ a, button{ display: inline-block; text-decoration: none; color: inherit; transit
 
 a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
-a b.light-color:hover{ text-decoration: none; color: #01568f; }
+a b.light-color:hover{ text-decoration: none; }
 
 b{ font-weight: 500; }
 
@@ -100,10 +100,10 @@ b.light-color{ color: #444; }
 .border-btn{ font-size: .9em; padding-bottom: 5px; background: none; color: inherit; border: 0; 
 	position: relative; overflow: hidden; }
 
-.border-btn:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; 
+.border-btn:after{  position: absolute; bottom: 0; left: 0; right: 0; height: 2px; 
 	transition: all .3s; background: #01568f; }
 
-.border-btn:before{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; 
+.border-btn:before{  position: absolute; bottom: 0; left: 0; right: 0; height: 2px; 
 	transform: translateX(-130%); transition: all .3s; background: #01568f; }
 	
 .border-btn:hover:after{ transform: translateX(130%); }
@@ -406,6 +406,13 @@ footer .copyright{ padding: 20px 0 30px; }
 
 .gift-button {
 	height: 150px;	
+}
+
+.confirm-button {
+	height: 115px;	
+}
+.input-space {
+	height: 80px;	
 }
 
 .btn-circle.btn-xl {
