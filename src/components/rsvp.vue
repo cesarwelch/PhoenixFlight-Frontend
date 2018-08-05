@@ -36,8 +36,8 @@
                         </p>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-4 offset-md-4 col-sm-4 offset-sm-4 input-space" v-for="item in items">
-                                    <input  class="form-control" id="plusones" placeholder="Ingrese invitado numero 1">
+                                <div class="col-md-4 offset-md-4 col-sm-4 offset-sm-4 input-space" v-for="item in items" :key="item.message">
+                                    <input   class="form-control" id="plusones" placeholder="Ingrese invitado numero 1">
                                 </div>
                             </div>
                         </div>
