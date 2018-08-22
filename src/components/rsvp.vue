@@ -55,6 +55,7 @@
     </section>
 </template>
 <script>
+// import axios from 'axios'
 var flag = 0
 
 export default {
@@ -71,11 +72,9 @@ export default {
   methods: {
     setYes: function (event) {
       this.flag = 1
-      console.log(flag)
     },
     setNo: function (event) {
       this.flag = 2
-      console.log(flag)
     }
   }
 }
