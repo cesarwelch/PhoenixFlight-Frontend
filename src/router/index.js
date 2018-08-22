@@ -14,7 +14,7 @@ let routes = [{
   component: home
 }, {
   path: '*',
-  redirect: '/'
+  component: home
 }]
 
 let router = new Router({
