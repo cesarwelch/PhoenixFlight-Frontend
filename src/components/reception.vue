@@ -15,15 +15,12 @@
                     <div class="ceremony margin-bottom">
                         <div class="row">
                             <div class="col-sm">
-                                <maps>
+                                <maps :lat='lat' :lng='lng'>
                                 </maps>
                             </div>
                             <div class="col-sm">
                                 <p>
-                                    We assist our clients in creating memorable, magical
-                        celebrations that exceed expectations. Our personal approach ensures the weddings we
-                        plan are meaningful and truly reflect our clients as individuals, as couples, and states
-                        something about their shared values and sense of style.
+                                    Luego de la misa, les esperamos en la cena y celebración que se llevara a cabo en los salones Emperador I, II y II del Convention center del Hotel Copantl en la colonia (no se, voy a verificar).
                                 </p>
                             </div>
                         </div>
@@ -46,7 +43,8 @@ export default {
 
   data () {
     return {
-
+      lat: '15.490718',
+      lng: '-88.036218'
     }
   }
 }

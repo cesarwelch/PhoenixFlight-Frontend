@@ -16,14 +16,11 @@
                         <div class="row">
                             <div class="col-sm">
                                 <p class="desc">
-                                    We assist our clients in creating memorable, magical
-                        celebrations that exceed expectations. Our personal approach ensures the weddings we
-                        plan are meaningful and truly reflect our clients as individuals, as couples, and states
-                        something about their shared values and sense of style.
+                                    La ceremonia religiosa se llevara a cabo el dia sábado 20 de Octubre del 2018 en la Iglesia Maria Reina del Mundo ubicada en (idk, gotta check) a las (tengo que confirmar la hora)
                                 </p>
                             </div>
                             <div class="col-sm">
-                                <maps>
+                                <maps :lat='lat' :lng='lng'>
                                 </maps>
                             </div>
                         </div>
@@ -46,6 +43,8 @@ export default {
   name: 'ceremony',
   data () {
     return {
+      lat: '15.489157',
+      lng: '-88.045571'
     }
   }
 }

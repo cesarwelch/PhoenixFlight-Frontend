@@ -12,6 +12,9 @@
                     <h1 class="title">
                         Franklyn y Maria José
                     </h1>
+                    <h3 class="date">
+                        Quisiéramos que nos honren con su presencia en el dia de nuestra boda
+                    </h3>
                 </div>
                 <!-- slider-content-->
             </div>

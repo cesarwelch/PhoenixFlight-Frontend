@@ -4,15 +4,15 @@
         <main-slider>
         </main-slider>
         <div v-if="path">
-            <!-- Story line -->
-            <story-line>
-            </story-line>
             <!-- ceremony -->
             <ceremony>
             </ceremony>
             <!-- Reception -->
             <reception>
             </reception>
+            <!-- Story line -->
+            <story-line>
+            </story-line>
             <!-- gifts -->
             <gifts>
             </gifts>
