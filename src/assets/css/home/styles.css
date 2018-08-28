@@ -256,6 +256,12 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .slider-content .date{ margin: 10px 0 0; }
 
+.slider-style-1 {font-family: 'Playball', cursive; margin-bottom: 10px;}
+
+.slider-style-2 {font-family: 'Playball', cursive; margin-bottom: 30px}
+
+.slider-style-3 {font-family: 'Playball', cursive;}
+
 .slider-content i{ line-height: 1; }
 
 .slider-content i.small-icon{ font-size: 2.5em; }
@@ -321,7 +327,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .w-detail .icon{ font-size: 3.5em; line-height: 1; color: #01568f; }
 
 .w-details-area { position: relative; z-index: 1; 
-	background-image: url(../../images/suculenta6.jpg); background-size: cover; color: #fff; background-position: center; }
+	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; background-position: center; }
 
 .w-details-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
@@ -331,7 +337,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 --------------------------------- */
 
 .ceremony-area{ position: relative; z-index: 1; 
-	background-image: url(../../images/suculenta5.jpg); background-size: cover; color: #fff; background-position: center; }
+	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; background-position: center; }
 
 .ceremony-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
