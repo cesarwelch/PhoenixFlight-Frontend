@@ -3,77 +3,91 @@
         <div class="display-table center-text">
             <div class="display-table-cell">
                 <div class="slider-content">
-                    <div class="container">
+                    <div class="container slider-style">
                         <div class="row">
-                            <h5 class="slider-style-4">
-                                Con el infinito apoyo y la bendición de nuestros Padres
-                            </h5>
+                            <div class="col-12">
+                                <h3>
+                                    Con el infinito apoyo y la bendición de nuestros Padres
+                                </h3>
+                            </div>
                         </div>
-                        <div class="row slider-style-3">
-                            <div class="col-sm">
-                                <h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>
                                     Edwin Alfredo Fernández Batrez
-                                </h4>
+                                </h3>
                             </div>
-                            <div class="col-sm">
-                                <h4>
+                            <div class="col-6">
+                                <h3>
                                     Carlos Roberto Sarmiento Cubero
-                                </h4>
+                                </h3>
                             </div>
                         </div>
-                        <div class="row slider-style-3">
-                            <div class="col-sm">
-                                <h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>
                                     y
-                                </h4>
+                                </h3>
                             </div>
                         </div>
-                        <div class="row slider-style-3">
-                            <div class="col-sm">
-                                <h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>
                                     Claudia Patricia Sabillón Paz
-                                </h4>
+                                </h3>
                             </div>
-                            <div class="col-sm">
+                            <div class="col-6">
                                 <h4>
                                     Marvelí del Socorro Cano Rodríguez
                                 </h4>
                             </div>
                         </div>
                         <div class="row">
-                            <h4 class="pre-title slider-style-1">
-                                Nosotros
-                            </h4>
+                            <div class="col-12">
+                                <h3>
+                                    Nosotros
+                                </h3>
+                            </div>
                         </div>
                         <div class="row">
-                            <h1 class="title slider-style-2">
-                                Franklyn Alfredo Fernández Sabillón
-                            </h1>
+                            <div class="col-12">
+                                <h1 class="title">
+                                    Franklyn Alfredo Fernández Sabillón
+                                </h1>
+                            </div>
                         </div>
                         <div class="row">
-                            <h2 class="slider-style-2">
-                                y
-                            </h2>
+                            <div class="col-12">
+                                <h2 class="title">
+                                    y
+                                </h2>
+                            </div>
                         </div>
                         <div class="row">
-                            <h1 class="title slider-style-2">
-                                María José Rivera Cano
-                            </h1>
+                            <div class="col-12">
+                                <h1 class="title">
+                                    María José Rivera Cano
+                                </h1>
+                            </div>
                         </div>
-                        <h4 class="slider-style-3">
-                            Quisiéramos que nos honren con su presencia el día de nuestra boda
-                        </h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="title">
+                                    Quisiéramos que nos honren con su presencia el día de nuestra boda
+                                </h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- slider-content-->
             </div>
-            <!-- slider-content-->
+            <!--display-table-cell-->
         </div>
-        <!--display-table-cell-->
+        <!-- display-table-->
     </div>
-    <!-- display-table-->
 </template>
 <script>
-    export default {
+export default {
 
   name: 'mainSlider',
 
