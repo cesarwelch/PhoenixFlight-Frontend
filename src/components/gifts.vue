@@ -8,18 +8,16 @@
                             Obsequios
                         </h2>
                         <span class="heading-bottom">
-                            <i class="color-white icon icon-star">
-                            </i>
+                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
                         </span>
                     </div>
                     <div class="ceremony margin-bottom">
                         <div class="row">
                             <div class="col-sm">
-                                <h5>El mejor regalo que podríamos tener es el poder compartir con nuestros seres queridos un
-dia tan importante y de tanta alegría para nosotros. Si además quisieran llevar un
-obsequio, les agradeceríamos que fuera en efectivo. Para su comodidad hemos incluido los
-números de cuenta a los que podrían hacer llegar el deposito. (Debe haber una nota que
-diga que estarán disponibles hasta el Jueves 18 de Octubre al mediodía)</h5>
+                                <h5 class="ceremony-text-space">El mejor regalo que podríamos tener es el poder compartir con nuestros seres queridos un día tan importante y de tanta alegría para nosotros. 
+                                Si además quisieran llevar un obsequio, les agradeceríamos que fuera en efectivo.  
+                                </h5>
+                                <h6>Para su comodidad hemos incluido los números de cuenta a los que podrían hacer llegar el deposito.</h6>
                             </div>
                         </div>
                         <div class="row">

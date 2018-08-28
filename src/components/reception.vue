@@ -1,5 +1,5 @@
 <template>
-    <section class="section galery-area center-text">
+    <section class="section reception-area center-text">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -8,19 +8,19 @@
                             Recepción
                         </h2>
                         <span class="heading-bottom">
-                            <i class="icon icon-star">
-                            </i>
+                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
                         </span>
                     </div>
-                    <div class="ceremony margin-bottom">
+                    <div class="margin-bottom">
                         <div class="row">
                             <div class="col-sm">
                                 <maps :lat='lat' :lng='lng'>
                                 </maps>
                             </div>
                             <div class="col-sm">
-                                <p>
-                                    Luego de la misa, les esperamos en la cena y celebración que se llevara a cabo en los salones Emperador I, II y II del Convention center del Hotel Copantl en la colonia (no se, voy a verificar).
+                                <p class="reception">
+                                    Posteriormente, les esperamos en la recepción que se llevará  a cabo en los salones Emperador I, II y II del Centro de Convenciones del Hotel Copantl. 
+                                    ¡Los esperamos!
                                 </p>
                             </div>
                         </div>

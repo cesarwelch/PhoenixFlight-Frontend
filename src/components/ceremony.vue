@@ -8,15 +8,14 @@
                             Ceremonia
                         </h2>
                         <span class="heading-bottom">
-                            <i class="color-white icon icon-star">
-                            </i>
+                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
                         </span>
                     </div>
                     <div class="ceremony margin-bottom">
                         <div class="row">
                             <div class="col-sm">
                                 <p class="desc">
-                                    La ceremonia religiosa se llevara a cabo el dia sábado 20 de Octubre del 2018 en la Iglesia Maria Reina del Mundo ubicada en (idk, gotta check) a las (tengo que confirmar la hora)
+                                    La ceremonia religiosa se llevará a cabo el día sábado 20 de Octubre del presente año en la Iglesia Maria Reina del Mundo (ubicada en La colonia Primavera, parte alta de la colonia Trejo) a las <u>6:00pm.</u>
                                 </p>
                             </div>
                             <div class="col-sm">

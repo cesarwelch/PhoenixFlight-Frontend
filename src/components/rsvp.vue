@@ -8,8 +8,7 @@
                             Confirma tu asistencia
                         </h2>
                         <span class="heading-bottom">
-                            <i class="icon icon-star">
-                            </i>
+                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
                         </span>
                     </div>
                     <!-- Botones de confirmacion -->

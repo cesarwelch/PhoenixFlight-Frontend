@@ -81,6 +81,7 @@ b.light-color{ color: #444; }
 
 [class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
 
+.suculenta-icon { height: 30px; width: 30px; }
 
 
 /* ---------------------------------
@@ -319,20 +320,39 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .w-detail .icon{ font-size: 3.5em; line-height: 1; color: #01568f; }
 
+.w-details-area { position: relative; z-index: 1; 
+	background-image: url(../../images/suculenta6.jpg); background-size: cover; color: #fff; background-position: center; }
 
+.w-details-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
+	z-index: -1; background: rgba(0,0,0,.3); }
 
 /* ---------------------------------
 8. WEDDING CEREMONY
 --------------------------------- */
 
 .ceremony-area{ position: relative; z-index: 1; 
-	background-image: url(../../images/sky1.jpg); background-size: cover; color: #fff; }
+	background-image: url(../../images/suculenta5.jpg); background-size: cover; color: #fff; background-position: center; }
 
 .ceremony-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
 	
 .ceremony .desc{ margin-bottom: 15px; color: #fff;  }
 
+.ceremony-text-space {margin-bottom: 15px;}
+
+/* ---------------------------------
+8. WEDDING RECEPTION
+--------------------------------- */
+
+.reception-area{ position: relative; z-index: 1; 
+	background-image: url(../../images/sky1.jpg); background-size: cover; color: #fff; background-position: center; }
+
+.reception-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
+	z-index: -1; background: rgba(0,0,0,.3); }
+	
+.reception{ margin-bottom: 15px; color: #fff;  }
+
+.reception-text-space {margin-bottom: 15px;}
 
 /* ---------------------------------
 8. Gifts

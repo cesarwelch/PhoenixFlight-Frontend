@@ -10,8 +10,7 @@
                             <h3 class="title">
                                 Contact Us
                             </h3>
-                            <i class="icon icon-star">
-                            </i>
+                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
                         </div>
                         <div class="margin-bottom">
                             <p>
