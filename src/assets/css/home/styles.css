@@ -48,9 +48,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; paddi
 
 h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
-h1,h2,h3{ font-family: 'Playball', cursive; }
+h1,h2,h3,h4,h5,h6{ font-family: 'Playball', cursive; }
 
-p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #555; }
+p{ font-family: 'Playball', cursive; line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #555; }
 
 h1{ font-size: 5em; line-height: 1; }
 h2{ font-size: 3.5em; line-height: 1.1; }
@@ -258,13 +258,8 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .slider-style {font-family: 'Playball', cursive;}
 
-.slider-style-1 {font-family: 'Playball', cursive; margin-bottom: 10px; font-size: 1.6em;}
+.slider-space {margin-bottom: 30px;}
 
-.slider-style-2 {font-family: 'Playball', cursive; margin-bottom: 30px}
-
-.slider-style-3 {font-family: 'Playball', cursive; font-size: 1.6em;}
-
-.slider-style-4 {font-family: 'Playball', cursive; margin-bottom: 30px; font-size: 1.6em;}
 
 .slider-content i{ line-height: 1; }
 
@@ -334,7 +329,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; background-position: center; }
 
 .w-details-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.3); }
+	z-index: -1; background: rgba(0,0,0,.5); }
 
 /* ---------------------------------
 8. WEDDING CEREMONY
@@ -344,9 +339,9 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; background-position: center; }
 
 .ceremony-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.3); }
+	z-index: -1; background: rgba(0,0,0,.5); }
 	
-.ceremony .desc{ margin-bottom: 15px; color: #fff;  }
+.ceremony .desc{ font-size: 2em; margin-bottom: 15px; color: #fff;  }
 
 .ceremony-text-space {margin-bottom: 15px;}
 
@@ -360,7 +355,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .reception-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
 	
-.reception{ margin-bottom: 15px; color: #fff;  }
+.reception{ font-size: 2em; margin-bottom: 15px; color: #fff;  }
 
 .reception-text-space {margin-bottom: 15px;}
 

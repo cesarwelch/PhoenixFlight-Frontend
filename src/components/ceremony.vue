@@ -14,9 +14,9 @@
                     <div class="ceremony margin-bottom">
                         <div class="row">
                             <div class="col-sm">
-                                <p class="desc">
+                                <h5 class="desc">
                                     La ceremonia religiosa se llevará a cabo el día sábado 20 de Octubre del presente año en la Iglesia Maria Reina del Mundo (ubicada en La colonia Primavera, parte alta de la colonia Trejo) a las <u>6:00pm.</u>
-                                </p>
+                                </h5>
                             </div>
                             <div class="col-sm">
                                 <maps :lat='lat' :lng='lng'>

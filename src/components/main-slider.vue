@@ -5,7 +5,7 @@
                 <div class="slider-content">
                     <div class="container slider-style">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 slider-space">
                                 <h3>
                                     Con el infinito apoyo y la bendición de nuestros Padres
                                 </h3>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <h1 class="title">
+                                <h1 class="title slider-space">
                                     María José Rivera Cano
                                 </h1>
                             </div>
