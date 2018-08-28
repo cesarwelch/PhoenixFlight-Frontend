@@ -256,11 +256,13 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .slider-content .date{ margin: 10px 0 0; }
 
-.slider-style-1 {font-family: 'Playball', cursive; margin-bottom: 10px;}
+.slider-style-1 {font-family: 'Playball', cursive; margin-bottom: 10px; font-size: 1.6em;}
 
 .slider-style-2 {font-family: 'Playball', cursive; margin-bottom: 30px}
 
-.slider-style-3 {font-family: 'Playball', cursive;}
+.slider-style-3 {font-family: 'Playball', cursive; font-size: 1.6em;}
+
+.slider-style-4 {font-family: 'Playball', cursive; margin-bottom: 30px; font-size: 1.6em;}
 
 .slider-content i{ line-height: 1; }
 
