@@ -1,46 +1,26 @@
 <template>
-    <section class="contact-area">
-        <div class="contact-wrapper section float-left">
+    <section class="section center-text contact-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-2">
-                    </div>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                         <div class="heading">
-                            <h3 class="title">
-                                Contact Us
-                            </h3>
+                            <h2 class="title">
+                                Agrega una canción a nuestra Playlist
+                            </h2>
+                            <span class="heading-bottom">
                             <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
-                        </div>
-                        <div class="margin-bottom">
-                            <p>
-                                On the 25 September 2017
-                            </p>
-                            <p>
-                                Join us as we celebrate life and love.
-                            </p>
-                            <h4>
-                                <a class="phone" href="tel:784-412-0646">
-                                    784-412-0646
-                                </a>
-                            </h4>
-                            <p>
-                                14 Baria street 133/2, New York City, US
-                            </p>
+                        </span>
                         </div>
                         <!-- margin-bottom -->
+                    </div>
+                    <div class="col-sm-12">
+                        <iframe src="https://open.spotify.com/embed/user/majocano11/playlist/3OE24kIttmhfOGnoldSmEw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <!-- col-sm-10 -->
                 </div>
                 <!-- row -->
             </div>
             <!-- container -->
-        </div>
-        <!-- float-left -->
-        <div class="map-area">
-            <div id="map" style="height:100%;">
-            </div>
-        </div>
         <!-- map-area
             <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap">
             </script>

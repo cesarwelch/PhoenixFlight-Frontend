@@ -8,8 +8,7 @@
                             Don't miss it!
                         </h2>
                         <span class="heading-bottom">
-                            <i class="color-white icon icon-star">
-                            </i>
+                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
                         </span>
                     </div>
                 </div>

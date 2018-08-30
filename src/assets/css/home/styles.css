@@ -292,10 +292,10 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 --------------------------------- */
 
 .counter-area{ position: relative; z-index: 1; 
-	background-image: url(../../images/counter-1-1600x600.jpg); background-size: cover; color: #fff; }
+	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff;}
 
 .counter-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.3); }
+	z-index: -1; background: rgba(0,0,0,.5);}
 	
 .remaining-time .time-sec{ position: relative; display: inline-block; margin: 0 20px; margin-bottom: 30px; 
 	height: 120px; width: 120px; padding-top: 25px; border-radius: 100px; border: 1px solid #fff; }
@@ -383,7 +383,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 --------------------------------- */
 
 .rsvp-area{ position: relative; z-index: 1; 
-	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; }
+	background-image: url(../../images/sky1.jpg); background-size: cover; color: #fff; }
 
 .rsvp-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
@@ -392,10 +392,11 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 /* ---------------------------------
 9. CONTACT AREA
 --------------------------------- */
+.contact-area{ position: relative; z-index: 1; 
+	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; }
 
-.contact-area{ position: relative; overflow: hidden; box-shadow: 1px 10px 40px rgba(0,0,0,.4); }
-
-.contact-area .contact-wrapper{ width: 50%; }
+.contact-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
+	z-index: -1; background: rgba(0,0,0,.5); }
 
 .contact-area .map-area{ width: 50%; position: absolute; top: 0; bottom: 0; right: 0; }
 
@@ -460,7 +461,8 @@ footer .copyright{ padding: 20px 0 30px; }
 	height: 115px;	
 }
 .input-space {
-	height: 80px;	
+	height: 80px;
+	color: #fff;	
 }
 
 .btn-circle.btn-xl {
