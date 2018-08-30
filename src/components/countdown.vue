@@ -5,7 +5,7 @@
                 <div class="col-sm-12">
                     <div class="heading">
                         <h2 class="title">
-                            Don't miss it!
+                            Nos vemos en
                         </h2>
                         <span class="heading-bottom">
                             <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">

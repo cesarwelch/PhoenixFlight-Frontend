@@ -83,10 +83,6 @@
                         </b-carousel-slide>
 
                     </b-carousel>
-                    <p class="mt-4">
-                        Slide #: {{ slide }}
-                        Sliding: {{ sliding }}
-                    </p>
                 </div>
             </div>
             <!-- row -->
