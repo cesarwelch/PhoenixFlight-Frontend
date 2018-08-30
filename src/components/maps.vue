@@ -27,9 +27,9 @@ export default {
   name: 'maps',
   props: ['lat', 'lng'],
   data () {
-    markers[0].position.lat = Number(this.lat)
-    markers[0].position.lng = Number(this.lng)
-    console.log(markers)
+    markers = [{
+      position: {lat: Number(this.lat), lng: Number(this.lng)}
+    }]
     return {
       markers: markers
     }

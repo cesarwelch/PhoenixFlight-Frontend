@@ -277,6 +277,15 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .story-area:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
 	opacity: .8; background: url(../../images/Background_Circle.png); }
 
+.story-images { width: 720px; height: 720px; }
+
+@media only screen and (max-width: 600px) {
+    .story-images { max-width: 100%; height: 320px; }
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+     background-image: none !important; 
+}
+
 
 /* ---------------------------------
 6. REMAINING TIME
@@ -367,6 +376,16 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	background-image: url(../../images/envelopes3.jpg); background-size: cover; color: #fff; }
 
 .gifts-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
+	z-index: -1; background: rgba(0,0,0,.3); }
+
+/* ---------------------------------
+8. RSVP
+--------------------------------- */
+
+.rsvp-area{ position: relative; z-index: 1; 
+	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; }
+
+.rsvp-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
 	
 

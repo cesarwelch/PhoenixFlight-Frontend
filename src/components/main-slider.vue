@@ -7,7 +7,7 @@
                         <div class="row">
                             <div class="col-12 slider-space">
                                 <h3>
-                                    Con el infinito apoyo y la bendición de nuestros Padres
+                                    Con la bendición de Dios y de nuestros Padres
                                 </h3>
                             </div>
                         </div>

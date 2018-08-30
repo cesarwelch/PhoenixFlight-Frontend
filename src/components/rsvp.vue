@@ -1,5 +1,5 @@
 <template>
-    <section class="section galery-area center-text">
+    <section class="section rsvp-area center-text">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">

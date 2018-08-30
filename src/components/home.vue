@@ -16,6 +16,9 @@
             <!-- gifts -->
             <gifts>
             </gifts>
+            <!-- countdown -->
+            <countdown>
+            </countdown>
             <!-- RSVP -->
             <rsvp>
             </rsvp>
@@ -138,13 +141,14 @@ import storyLine from './story-line.vue'
 import ceremony from './ceremony.vue'
 import reception from './reception.vue'
 import gifts from './gifts.vue'
+import countdown from './countdown.vue'
 import rsvp from './rsvp.vue'
 import contact from './contact.vue'
 var path = false
 
 export default {
   components: {
-    mainSlider, storyLine, ceremony, reception, gifts, rsvp, contact
+    mainSlider, storyLine, ceremony, reception, gifts, countdown, rsvp, contact
   },
   mounted () {
     console.log(this.$route.path)

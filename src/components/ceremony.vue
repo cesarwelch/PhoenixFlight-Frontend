@@ -15,7 +15,7 @@
                         <div class="row">
                             <div class="col-sm">
                                 <h5 class="desc">
-                                    La ceremonia religiosa se llevará a cabo el día sábado 20 de Octubre del presente año en la Iglesia Maria Reina del Mundo (ubicada en La colonia Primavera, parte alta de la colonia Trejo) a las <u>6:00pm.</u>
+                                    La ceremonia religiosa será el día sábado 20 de Octubre del presente año en la Iglesia Maria Reina del Mundo (ubicada en La colonia Primavera, parte alta de la colonia Trejo) a las <u>6:30p.m.</u>
                                 </h5>
                             </div>
                             <div class="col-sm">
@@ -42,8 +42,8 @@ export default {
   name: 'ceremony',
   data () {
     return {
-      lat: '15.489157',
-      lng: '-88.045571'
+      lat: '15.489198',
+      lng: '-88.045567'
     }
   }
 }

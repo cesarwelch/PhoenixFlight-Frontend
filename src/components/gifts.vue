@@ -14,10 +14,10 @@
                     <div class="ceremony margin-bottom">
                         <div class="row">
                             <div class="col-sm">
-                                <h5 class="ceremony-text-space">El mejor regalo que podríamos tener es el poder compartir con nuestros seres queridos un día tan importante y de tanta alegría para nosotros.
+                                <h4 class="ceremony-text-space">El mejor regalo que podríamos tener es el poder compartir con nuestros seres queridos un día tan importante y de tanta alegría para nosotros.
                                 Si además quisieran llevar un obsequio, les agradeceríamos que fuera en efectivo.
-                                </h5>
-                                <h6>Para su comodidad hemos incluido los números de cuenta a los que podrían hacer llegar el deposito.</h6>
+                                </h4>
+                                <h5>Para su comodidad hemos incluido los números de cuenta a los que podrían hacer llegar el deposito.</h5>
                             </div>
                         </div>
                         <div class="row">
