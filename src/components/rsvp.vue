@@ -79,7 +79,7 @@ export default {
     setNo: function (event) {
       this.flag = 2
       axios
-        .put('http://localhost:8000/api/guest/denyResponse', {
+        .put('https://phoenixdawn.herokuapp.com/api/guest/denyResponse', {
           id: this.guest.id
         }).then(response => {
           console.log('Nay')
@@ -87,7 +87,7 @@ export default {
     },
     send: function (event) {
       axios
-        .put('http://localhost:8000/api/guest/updateGuestList', {
+        .put('https://phoenixdawn.herokuapp.com/api/guest/updateGuestList', {
           response: true,
           plusonelist: this.guests,
           id: this.guest.id

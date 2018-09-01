@@ -162,7 +162,7 @@ export default {
     let path = this.$route.path
     hashedId = path.substring(7, path.length)
     axios
-      .get('http://localhost:8000/api/guest/' + hashedId)
+      .get('https://phoenixdawn.herokuapp.com/api/guest/' + hashedId)
       .then(response => {
         if (response.data.length !== 0 && tempFlag) {
           this.path = true
