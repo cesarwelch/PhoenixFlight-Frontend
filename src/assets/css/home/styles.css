@@ -352,7 +352,15 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	
 .ceremony .desc{ font-size: 2em; margin-bottom: 15px; color: #fff;  }
 
-.ceremony-text-space {margin-bottom: 15px;}
+.ceremony-text-space { margin-bottom: 15px;}
+
+.map-link {text-decoration: underline; color: white;}
+
+.map-link:after {color: white;}
+
+.map-link:hover {color: white;}
+
+.map-link:before {color: white;}
 
 /* ---------------------------------
 8. WEDDING RECEPTION
@@ -478,8 +486,9 @@ footer .copyright{ padding: 20px 0 30px; }
 .btn-circle.btn-xl:hover {
 	width: 220px;
     border-radius: 35px;
+    color: white;
     background: #01568f;
-    content: 'ADD';
+    content: '04515454545454';
 }
 
 .image-bac-icon {

@@ -31,18 +31,22 @@
                     <!-- form -->
                     <form v-if="flag === 1">
                         <p class="input-space">
-                            Usted cuenta con x asientos.
+                            Usted cuenta con {{plusone}} asientos.
                         </p>
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-4 offset-md-4 col-sm-4 offset-sm-4 input-space" v-for="item in items" :key="item.message">
-                                    <input   class="form-control" id="plusones" placeholder="Ingrese invitado numero 1">
+                                    <input v-model="message" class="form-control" id="plusones" placeholder="Ingrese invitado">
+                                    {{message}}
                                 </div>
                             </div>
                         </div>
-                        <a class="border-btn" href="#">
+                        <button class="border-btn" type="button" v-on:click="">
+                                    Enviar
+                                </button>
+                      <!--   <button class="border-btn" v-on:click="flag = 1">
                             Enviar
-                        </a>
+                        </button> -->
                     </form>
                     <!-- image-gallery -->
                 </div>
@@ -54,7 +58,8 @@
     </section>
 </template>
 <script>
-// import axios from 'axios'
+import axios from 'axios'
+var plusone = 0
 var flag = 0
 
 export default {
@@ -62,11 +67,20 @@ export default {
   data () {
     return {
       flag: flag,
-      items: [
-        { message: 'Foo' },
-        { message: 'Bar' }
-      ]
+      plusone: plusone,
+      items: [],
+      message: ''
     }
+  },
+  mounted () {
+    axios
+      .get('http://localhost:8000/api/guest/c4ca4238a0b923820dcc509a6f75849b')
+      .then(response => {
+        this.plusone = response.data[0].plusone
+        for (var i = 0; i < this.plusone; i++) {
+          this.items[i] = i
+        }
+      })
   },
   methods: {
     setYes: function (event) {

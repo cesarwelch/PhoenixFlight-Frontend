@@ -17,7 +17,7 @@
             </div>
             <div class="row">
               <div class="col-sm">
-                <h2>Nuestra historia desde el 20 de abril del 2013 hasta hoy</h2>
+                <h2>Nuestra historia en fotos desde el 20 de abril del 2013 hasta hoy</h2>
               </div>
                 <div class="col-sm">
                     <b-carousel controls :interval="4000" @sliding-end="onSlideEnd" @sliding-start="onSlideStart" background="#ababab" id="carousel" img-heigth img-width="720" indicators="" class="story-images" v-model="slide">

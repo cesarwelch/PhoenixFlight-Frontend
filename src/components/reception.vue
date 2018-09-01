@@ -22,6 +22,11 @@
                                     Posteriormente la recepción se llevará  a cabo en los salones Emperador I, II y II del Centro de Convenciones del Hotel Copantl.
                                     ¡Los esperamos!
                                 </p>
+                                <h5>
+                                    <a target="_blank" class="border-btn map-link" href="https://www.google.com/maps/place/Centro+de+Convenciones+Copantl/@15.490392,-88.03648,18.56z/data=!4m12!1m6!3m5!1s0x8f665c822d13c36f:0x8dd04476a2d355a5!2sIglesia+Maria+Reina+del+Mundo!8m2!3d15.489157!4d-88.0455709!3m4!1s0x0:0xbfab15e8d6ecd573!8m2!3d15.4907179!4d-88.036218?hl=es">
+                                       Cómo llegar
+                                    </a>
+                                </h5>
                             </div>
                         </div>
                     </div>

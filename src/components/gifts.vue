@@ -24,18 +24,21 @@
                             <div class="gift-space col-sm">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row ceremony-text-space">
                             <div class="col-sm">
-                                <div class="gift-button">
-                                    <button class="btn btn-circle btn-xl" type="button">
-                                        <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
-                                    </button>
-                                </div>
+                                <button class="btn btn-circle btn-xl" type="button">
+                                    <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
+                                </button>
                             </div>
                             <div class="col-sm">
                                 <button class="btn btn-circle btn-xl" type="button">
                                     <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
                                 </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <h5>Esta información estará disponible del jueves 18 de octubre al mediodía hasta el domingo 21 de octubre al mediodía.</h5>
                             </div>
                         </div>
                     </div>
@@ -48,13 +51,19 @@
     </section>
 </template>
 <script>
+var flag = 0
 export default {
 
   name: 'gifts',
 
   data () {
     return {
-
+      flag: flag
+    }
+  },
+  methods: {
+    viewAccount: function (event) {
+      this.flag = 1
     }
   }
 }
