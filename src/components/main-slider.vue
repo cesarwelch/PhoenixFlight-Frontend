@@ -1,5 +1,6 @@
 <template>
     <div class="main-slider">
+
         <div class="display-table center-text">
             <div class="display-table-cell">
                 <div class="slider-content">
@@ -11,26 +12,26 @@
                                 </h3>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row reduced-row-height">
                             <div class="col-6">
-                                <h3>
+                                <h3 class="reduced-line-height">
                                     Edwin Alfredo Fernández Batrez
                                 </h3>
                             </div>
                             <div class="col-6">
-                                <h3>
+                                <h3 class="reduced-line-height">
                                     Carlos Roberto Sarmiento Cubero
                                 </h3>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row reduced-row-height">
                             <div class="col-12">
-                                <h3>
+                                <h3 class="">
                                     y
                                 </h3>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row ">
                             <div class="col-6">
                                 <h3>
                                     Claudia Patricia Sabillón Paz
@@ -73,7 +74,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <h3 class="title">
-                                    Quisiéramos que nos honren con su presencia el día de nuestra boda
+                                    Tenemos el honor de invitarles a nuestra boda
                                 </h3>
                             </div>
                         </div>

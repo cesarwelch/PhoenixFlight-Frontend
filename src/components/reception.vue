@@ -19,7 +19,7 @@
                             </div>
                             <div class="col-sm">
                                 <p class="reception">
-                                    Posteriormente la recepción se llevará  a cabo en los salones Emperador I, II y II del Centro de Convenciones del Hotel Copantl.
+                                    ¡Ven a celebrar con nosotros! La recepción será en los Salones Emperador I, II y III del Centro de Convenciones del Hotel Copantl.
                                     ¡Los esperamos!
                                 </p>
                                 <h5>

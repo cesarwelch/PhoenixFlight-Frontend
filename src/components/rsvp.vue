@@ -15,14 +15,14 @@
                     <div class="row">
                         <div class=" col-md-12 offset-sm-12 ">
                             <div class="confirm-button">
-                                <button class="btn btn-primary" type="button" v-on:click="setYes">
+                                <button class="btn-rsvp btn-primary" type="button" v-on:click="setYes">
                                     ¡Ahí estaré! 🙂
                                 </button>
                             </div>
                         </div>
                         <div class=" col-md-12  offset-sm-12 ">
                             <div class="confirm-button">
-                                <button class="btn btn-primary" type="button" v-on:click="setNo">
+                                <button class="btn-rsvp btn-primary" type="button" v-on:click="setNo">
                                     No podré asistir ☹️
                                 </button>
                             </div>
@@ -75,6 +75,9 @@ export default {
   methods: {
     setYes: function (event) {
       this.flag = 1
+      if (JSON.parse(this.guest.plusonelist)) {
+        this.guests = JSON.parse(this.guest.plusonelist)
+      }
     },
     setNo: function (event) {
       this.flag = 2
