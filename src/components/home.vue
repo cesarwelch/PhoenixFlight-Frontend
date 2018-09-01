@@ -20,7 +20,7 @@
             <countdown>
             </countdown>
             <!-- RSVP -->
-            <rsvp>
+            <rsvp :guest='guest' :items='items'>
             </rsvp>
             <!-- contact -->
             <contact>
@@ -144,24 +144,44 @@ import gifts from './gifts.vue'
 import countdown from './countdown.vue'
 import rsvp from './rsvp.vue'
 import contact from './contact.vue'
-var path = false
+import axios from 'axios'
+
+let path = false
+let hashedId = ''
+let guest = {}
+let tempFlag = false
 
 export default {
   components: {
     mainSlider, storyLine, ceremony, reception, gifts, countdown, rsvp, contact
   },
   mounted () {
-    console.log(this.$route.path)
     if (this.$route.path !== '/') {
-      this.path = true
+      tempFlag = true
     }
-    console.log(this.path)
+    let path = this.$route.path
+    hashedId = path.substring(7, path.length)
+    axios
+      .get('http://localhost:8000/api/guest/' + hashedId)
+      .then(response => {
+        if (response.data.length !== 0 && tempFlag) {
+          this.path = true
+          this.guest = JSON.parse(JSON.stringify(response.data[0]))
+          this.plusone = response.data[0].plusone
+          for (var i = 0; i < this.plusone; i++) {
+            this.items[i] = i
+          }
+          this.path = true
+        }
+      })
   },
   name: 'home',
   props: ['test'],
   data () {
     return {
-      path: path
+      path: path,
+      items: [],
+      guest: guest
     }
   }
 }

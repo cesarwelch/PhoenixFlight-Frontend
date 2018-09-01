@@ -295,7 +295,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff;}
 
 .counter-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.5);}
+	z-index: -1; background: rgba(5, 18, 28, 0.68);}
 	
 .remaining-time .time-sec{ position: relative; display: inline-block; margin: 0 20px; margin-bottom: 30px; 
 	height: 120px; width: 120px; padding-top: 25px; border-radius: 100px; border: 1px solid #fff; }
@@ -338,8 +338,8 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; background-position: center; }
 
 .w-details-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.5); }
-
+	z-index: -1; background: rgba(5, 18, 28, 0.68); }
+ 
 /* ---------------------------------
 8. WEDDING CEREMONY
 --------------------------------- */
@@ -348,7 +348,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; background-position: center; }
 
 .ceremony-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.5); }
+	z-index: -1; background: rgba(5, 18, 28, 0.68); }
 	
 .ceremony .desc{ font-size: 2em; margin-bottom: 15px; color: #fff;  }
 
@@ -404,7 +404,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	background-image: url(../../images/suculenta4.jpg); background-size: cover; color: #fff; }
 
 .contact-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.5); }
+	z-index: -1; background: rgba(5, 18, 28, 0.68); }
 
 .contact-area .map-area{ width: 50%; position: absolute; top: 0; bottom: 0; right: 0; }
 
