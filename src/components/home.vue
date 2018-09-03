@@ -10,9 +10,6 @@
             <!-- Reception -->
             <reception>
             </reception>
-            <!-- Story line -->
-            <story-line>
-            </story-line>
             <!-- gifts -->
             <gifts>
             </gifts>
@@ -22,6 +19,9 @@
             <!-- RSVP -->
             <rsvp :guest='guest' :items='items'>
             </rsvp>
+            <!-- Story line -->
+            <story-line>
+            </story-line>
             <!-- contact -->
             <contact>
             </contact>

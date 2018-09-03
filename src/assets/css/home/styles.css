@@ -226,9 +226,9 @@ header .main-menu li.drop-down > ul.drop-down-inner{ top: 0; left: auto; left: 1
 /* DROPDOWN HOVER */
 
 header .main-menu > li > a:hover,
-header .main-menu li a.mouseover{ border-color: #01568f; }
+header .main-menu li a:focus{ border-color: #01568f; }
 
-header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block; 
+header .main-menu li.drop-down a:focus + ul.drop-down-menu{ display: block; 
 	animation: full-opacity-anim .2s forwards; }
 
 
@@ -248,8 +248,8 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 4. SLIDER
 --------------------------------- */
 
-.main-slider{ height: 100vh; position: relative; z-index: 1; 
-	background-image: url(../../images/sky1.jpg); background-size: cover; color: #fff; } 
+.main-slider{ position: relative; z-index: 1; 
+	background-image: url(../../images/sky1.jpg); background-size: cover; color: #fff; background-position: center; } 
 
 .main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
@@ -411,10 +411,10 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 9. CONTACT AREA
 --------------------------------- */
 .contact-area{ position: relative; z-index: 1; 
-	background-image: url(../../images/backgroundSuc.jpg); background-size: cover; color: #fff; }
+	background-image: url(../../images/sky1.jpg); background-size: cover; color: #fff; }
 
 .contact-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(5, 18, 28, 0.68); }
+	z-index: -1; background: rgba(5, 18, 28, 0.3); }
 
 .contact-area .map-area{ width: 50%; position: absolute; top: 0; bottom: 0; right: 0; }
 

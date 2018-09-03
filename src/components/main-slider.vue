@@ -1,5 +1,5 @@
 <template>
-    <section class="section reception-area center-text">
+    <section class="section main-slider center-text">
         <header>
             <div class="container">
                 <a class="logo" href="#">
@@ -12,12 +12,12 @@
                 <ul class="main-menu visible-on-click" id="main-menu">
                     <li>
                         <a href="index.html">
-                            HOME
+                            INICIO
                         </a>
                     </li>
                     <li class="drop-down">
                         <a href="#!">
-                            OUR STORIES
+                            DETALLES
                             <i class="icon icon-caret-down">
                             </i>
                         </a>
@@ -60,18 +60,94 @@
                     </li>
                     <li>
                         <a href="03-regular-page.html">
-                            THER WEDDING
+                            OBSEQUIOS
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            GELLERY
-                        </a>
-                    </li>
-                    <li>
-                        <a href="02-rsvp.html">
+                    <li class="drop-down">
+                        <a href="#!">
                             RSVP
+                            <i class="icon icon-caret-down">
+                            </i>
                         </a>
+                        <ul class="drop-down-menu">
+                            <li>
+                                <a href="#">
+                                    FEATURED
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ABOUT
+                                </a>
+                            </li>
+                            <li class="drop-down">
+                                <a href="#!">
+                                    CATEGORIES
+                                    <i class="icon icon-caret-right">
+                                    </i>
+                                </a>
+                                <ul class="drop-down-menu drop-down-inner">
+                                    <li>
+                                        <a href="#">
+                                            FEATURED
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            ABOUT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            CATEGORIES
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#!">
+                            MAS
+                            <i class="icon icon-caret-down">
+                            </i>
+                        </a>
+                        <ul class="drop-down-menu">
+                            <li>
+                                <a href="#">
+                                    FEATURED
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ABOUT
+                                </a>
+                            </li>
+                            <li class="drop-down">
+                                <a href="#!">
+                                    CATEGORIES
+                                    <i class="icon icon-caret-right">
+                                    </i>
+                                </a>
+                                <ul class="drop-down-menu drop-down-inner">
+                                    <li>
+                                        <a href="#">
+                                            FEATURED
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            ABOUT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            CATEGORIES
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

@@ -54,7 +54,7 @@
 	
 	.section .heading .heading-bottom{ margin-top: 10px; }
 
-	.slider-space { margin-bottom: 30px; margin-top: 30px; }
+	.slider-space { margin-bottom: 30px; margin-top: 20px; }
 
 	.reduced-row-height { height: 20px; }
 	
@@ -151,8 +151,6 @@
 	--------------------------------- */
 
 	body{ font-size: 14px;  }
-	
-
 
 
 }
@@ -170,3 +168,9 @@
 	
 	
 }
+
+
+/* SPECIAL RES FOR SLIDER EPICNESS
+-------------------------------------------------------------------------- */
+
+
