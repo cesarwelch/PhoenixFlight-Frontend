@@ -11,141 +11,74 @@
                 </div>
                 <ul class="main-menu visible-on-click" id="main-menu">
                     <li>
-                        <a href="index.html">
+                        <a>
                             INICIO
                         </a>
                     </li>
-                    <li class="drop-down">
-                        <a href="#!">
+                    <li @mouseleave="$set(detailsControl, 'selected', !detailsControl.selected)" class="drop-down">
+                        <a :class="{mouseover:detailsControl.selected}" @mouseover="$set(detailsControl, 'selected', !detailsControl.selected)">
                             DETALLES
                             <i class="icon icon-caret-down">
                             </i>
                         </a>
                         <ul class="drop-down-menu">
                             <li>
-                                <a href="#">
-                                    FEATURED
+                                <a v-on:click="scrollToCeremony">
+                                    CEREMONIA
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    ABOUT
+                                <a v-on:click="scrollToReception">
+                                    RECEPCIÓN
                                 </a>
-                            </li>
-                            <li class="drop-down">
-                                <a href="#!">
-                                    CATEGORIES
-                                    <i class="icon icon-caret-right">
-                                    </i>
-                                </a>
-                                <ul class="drop-down-menu drop-down-inner">
-                                    <li>
-                                        <a href="#">
-                                            FEATURED
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            ABOUT
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            CATEGORIES
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="03-regular-page.html">
+                        <a v-on:click="scrollToGifts">
                             OBSEQUIOS
                         </a>
                     </li>
-                    <li class="drop-down">
-                        <a href="#!">
+                    <li @mouseleave="$set(rsvpControl, 'selected', !rsvpControl.selected)" class="drop-down">
+                        <a :class="{mouseover:rsvpControl.selected}" @mouseover="$set(rsvpControl, 'selected', !rsvpControl.selected)">
                             RSVP
                             <i class="icon icon-caret-down">
                             </i>
                         </a>
                         <ul class="drop-down-menu">
                             <li>
-                                <a href="#">
-                                    FEATURED
+                                <a v-on:click="scrollToCountDown">
+                                    CUANTO FALTA
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    ABOUT
+                                <a v-on:click="scrollToRSVP">
+                                    CONFIRME SU ASISTENCIA
                                 </a>
-                            </li>
-                            <li class="drop-down">
-                                <a href="#!">
-                                    CATEGORIES
-                                    <i class="icon icon-caret-right">
-                                    </i>
-                                </a>
-                                <ul class="drop-down-menu drop-down-inner">
-                                    <li>
-                                        <a href="#">
-                                            FEATURED
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            ABOUT
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            CATEGORIES
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </li>
-                    <li class="drop-down">
-                        <a href="#!">
+                    <li @mouseleave="$set(moreControl, 'selected', !moreControl.selected)" class="drop-down">
+                        <a :class="{mouseover:moreControl.selected}" @mouseover="$set(moreControl, 'selected', !moreControl.selected)">
                             MAS
                             <i class="icon icon-caret-down">
                             </i>
                         </a>
                         <ul class="drop-down-menu">
                             <li>
-                                <a href="#">
-                                    FEATURED
+                                <a v-on:click="scrollToContact">
+                                    PLAYLIST
+                                </a>
+                            </li>
+                            <li>
+                                <a v-on:click="scrollToStoryLine">
+                                    STORY LINE
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    ABOUT
+                                    IMPRIMIR
                                 </a>
-                            </li>
-                            <li class="drop-down">
-                                <a href="#!">
-                                    CATEGORIES
-                                    <i class="icon icon-caret-right">
-                                    </i>
-                                </a>
-                                <ul class="drop-down-menu drop-down-inner">
-                                    <li>
-                                        <a href="#">
-                                            FEATURED
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            ABOUT
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            CATEGORIES
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -232,13 +165,42 @@
     </section>
 </template>
 <script>
-export default {
+var VueScrollTo = require('vue-scrollto')
 
+export default {
   name: 'mainSlider',
 
   data () {
     return {
-
+      detailsControl: {},
+      rsvpControl: {},
+      moreControl: {}
+    }
+  },
+  methods: {
+    scrollToHome: function (event) {
+      VueScrollTo.scrollTo('#ceremony-comp', 500)
+    },
+    scrollToCeremony: function (event) {
+      VueScrollTo.scrollTo('#ceremony-comp', 500)
+    },
+    scrollToReception: function (event) {
+      VueScrollTo.scrollTo('#reception-comp', 500)
+    },
+    scrollToGifts: function (event) {
+      VueScrollTo.scrollTo('#gifts-comp', 500)
+    },
+    scrollToRSVP: function (event) {
+      VueScrollTo.scrollTo('#rsvp-comp', 500)
+    },
+    scrollToCountDown: function (event) {
+      VueScrollTo.scrollTo('#countdown-comp', 500)
+    },
+    scrollToContact: function (event) {
+      VueScrollTo.scrollTo('#contact-comp', 500)
+    },
+    scrollToStoryLine: function (event) {
+      VueScrollTo.scrollTo('#story-comp', 500)
     }
   }
 }

@@ -226,9 +226,9 @@ header .main-menu li.drop-down > ul.drop-down-inner{ top: 0; left: auto; left: 1
 /* DROPDOWN HOVER */
 
 header .main-menu > li > a:hover,
-header .main-menu li a:focus{ border-color: #01568f; }
+header .main-menu li a.mouseover{ border-color: #01568f; }
 
-header .main-menu li.drop-down a:focus + ul.drop-down-menu{ display: block; 
+header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block; 
 	animation: full-opacity-anim .2s forwards; }
 
 

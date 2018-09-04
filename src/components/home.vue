@@ -5,25 +5,25 @@
         </main-slider>
         <div v-if="path">
             <!-- ceremony -->
-            <ceremony>
+            <ceremony id="ceremony-comp">
             </ceremony>
             <!-- Reception -->
-            <reception>
+            <reception id="reception-comp">
             </reception>
             <!-- gifts -->
-            <gifts>
+            <gifts id="gifts-comp">
             </gifts>
             <!-- countdown -->
-            <countdown>
+            <countdown id="countdown-comp">
             </countdown>
             <!-- RSVP -->
-            <rsvp :guest='guest' :items='items'>
+            <rsvp :guest='guest' :items='items' id="rsvp-comp">
             </rsvp>
             <!-- Story line -->
-            <story-line>
+            <story-line id="story-comp">
             </story-line>
             <!-- contact -->
-            <contact>
+            <contact id="contact-comp">
             </contact>
             <!-- contact -->
             <footer>
