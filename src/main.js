@@ -5,7 +5,9 @@ import * as VueGoogleMaps from 'vue2-google-maps'
 import App from './App'
 import router from './router'
 import BootstrapVue from 'bootstrap-vue'
+import printJS from 'print-js'
 
+Vue.use(printJS)
 Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false

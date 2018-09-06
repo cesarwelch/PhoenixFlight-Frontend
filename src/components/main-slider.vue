@@ -5,11 +5,11 @@
                 <a class="logo" href="#">
                     <img alt="Logo" src="../../src/assets/images/icons/Weddinglogo.png"/>
                 </a>
-                <div class="menu-nav-icon" data-nav-menu="#main-menu">
+                <div class="menu-nav-icon" data-nav-menu="#main-menu" @click="$set(mobileMenuControl, 'selected', !mobileMenuControl.selected)">
                     <i class="icon icon-bars">
                     </i>
                 </div>
-                <ul class="main-menu visible-on-click" id="main-menu">
+                <ul class="main-menu visible-on-click" id="main-menu" :class="{visible:mobileMenuControl.selected}">
                     <li>
                         <a>
                             INICIO
@@ -166,7 +166,6 @@
 </template>
 <script>
 var VueScrollTo = require('vue-scrollto')
-
 export default {
   name: 'mainSlider',
 
@@ -174,10 +173,16 @@ export default {
     return {
       detailsControl: {},
       rsvpControl: {},
-      moreControl: {}
+      moreControl: {},
+      mobileMenuControl: {}
     }
   },
   methods: {
+    displayMobileMenu: function (argument) {
+    },
+    print: function (url) {
+      // printJS('./static/img/sky1.d26773d.jpg')
+    },
     scrollToHome: function (event) {
       VueScrollTo.scrollTo('#ceremony-comp', 500)
     },

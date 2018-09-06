@@ -26,35 +26,32 @@
             <contact id="contact-comp">
             </contact>
             <!-- contact -->
-            <footer>
+<!--             <footer>
                 <div class="container center-text">
                     <div class="logo-wrapper">
-                        <a class="logo" href="#">
-                            <img alt="Logo Image" src="../../src/assets/images/logo-black.png"/>
+                        <a class="logo slider-bot-space">
+                            <img alt="Logo Image" src="../../src/assets/images/icons/Weddinglogo.png"/>
                         </a>
-                        <i class="icon icon-star">
-                        </i>
+                        <span class="heading-bottom">
+                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
+                        </span>
                     </div>
                     <div class="newsletter">
                         <h4 class="title">
-                            RECEIVE NEWS IN YOUR EMAIL
                         </h4>
                         <p>
                             Join our mailing list to receive news and announcements
                         </p>
                         <div class="email-area">
                             <form>
-                                <!--<input class="email-input" placeholder="Your Email" type="text">
+                                <input class="email-input" placeholder="Your Email" type="text">
                                 <button class="submit-btn" type="submit">
                                     <i class="icon icon-email-plane">
                                     </i>
                                 </button>
-                            </input>-->
                             </form>
                         </div>
-                        <!-- email-area -->
                     </div>
-                    <!-- newsletter -->
                     <ul class="social-icons">
                         <li>
                             <a href="#">
@@ -115,11 +112,10 @@
                         </li>
                     </ul>
                     <p class="copyright">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                        Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
                     Copyright ©
                     <script>
                         document.write(new Date().getFullYear());
-                    </script>-->
                         All rights reserved | This template is made with
                         <i aria-hidden="true" class="icon-heart">
                         </i>
@@ -127,11 +123,9 @@
                         <a href="https://colorlib.com" target="_blank">
                             Colorlib
                         </a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
-                <!-- container -->
-            </footer>
+            </footer> -->
         </div>
     </div>
 </template>
