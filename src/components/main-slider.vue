@@ -96,12 +96,12 @@
             <div class="row reduced-row-height">
                 <div class="col-6">
                     <h3 class="reduced-line-height">
-                        Edwin A. Fernández
+                        Edwin Fernández
                     </h3>
                 </div>
                 <div class="col-6">
                     <h3 class="reduced-line-height">
-                        Carlos R. Sarmiento
+                        Carlos Sarmiento
                     </h3>
                 </div>
             </div>
@@ -115,12 +115,12 @@
             <div class="row ">
                 <div class="col-6">
                     <h3>
-                        Claudia P. Sabillón
+                        Claudia Sabillón
                     </h3>
                 </div>
                 <div class="col-6">
                     <h3>
-                        Marvelí d. S. Cano
+                        Marvelí Cano
                     </h3>
                 </div>
             </div>

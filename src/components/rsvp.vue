@@ -8,7 +8,7 @@
                             Confirma tu asistencia
                         </h2>
                         <span class="heading-bottom">
-                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
+                            <img class="suculenta-icon" src="../../src/assets/images/weddingrings3.png">
                         </span>
                     </div>
                     <!-- Botones de confirmacion -->

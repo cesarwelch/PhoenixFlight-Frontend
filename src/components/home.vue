@@ -33,7 +33,7 @@
                             <img alt="Logo Image" src="../../src/assets/images/icons/Weddinglogo.png"/>
                         </a>
                         <span class="heading-bottom">
-                            <img class="suculenta-icon" src="../../src/assets/images/suculentaIcon.png">
+                            <img class="suculenta-icon" src="../../src/assets/images/weddingrings3.png">
                         </span>
                     </div>
                     <div class="newsletter">
