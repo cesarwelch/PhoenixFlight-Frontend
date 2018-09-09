@@ -3,7 +3,7 @@
     <div class="home">
         <main-slider>
         </main-slider>
-        <div class="mobile-z-fix" v-if="path">
+        <div v-if="path" >
             <!-- ceremony -->
             <ceremony id="ceremony-comp">
             </ceremony>
