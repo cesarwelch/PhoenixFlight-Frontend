@@ -38,7 +38,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm">
-                                <h5>Esta información estará disponible del jueves 18 de octubre al mediodía hasta el domingo 21 de octubre al mediodía.</h5>
+                                <h5>Esta información estará disponible a partir del jueves 18 de octubre al mediodía hasta el domingo 21 de octubre al mediodía.</h5>
                             </div>
                         </div>
                     </div>

@@ -25,13 +25,13 @@
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00295973.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
-                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00301450.jpg" />
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16043930.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00312486.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
-                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00314033.jpg" />
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16044316.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00300786.jpg" />
@@ -46,7 +46,7 @@
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00320251.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
-                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00290910.jpg" />
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16043427.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00291560.jpg" />
@@ -55,10 +55,10 @@
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00294868.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
-                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00292045.jpg" />
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16042728.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
-                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00310429.jpg" />
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16044820.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00304658.jpg" />
@@ -67,7 +67,7 @@
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00292731.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
-                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00303868.jpg" />
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16043078.jpg" />
                         </b-carousel-slide>
                         <b-carousel-slide>
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00311614.jpg" />
@@ -81,7 +81,18 @@
                         <b-carousel-slide>
                             <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180830_00285183.jpg" />
                         </b-carousel-slide>
-
+                        <b-carousel-slide>
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16041982.jpg" />
+                        </b-carousel-slide>
+                        <b-carousel-slide>
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16042272.jpg" />
+                        </b-carousel-slide>
+                        <b-carousel-slide>
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16041394.jpg" />
+                        </b-carousel-slide>
+                        <b-carousel-slide>
+                            <img alt="image slot" class="story-images"  slot="img" src="https://res.cloudinary.com/fernandez-cano/image/upload/w_720,h_720/SquareFit_20180908_16041377.jpg" />
+                        </b-carousel-slide>
                     </b-carousel>
                 </div>
             </div>

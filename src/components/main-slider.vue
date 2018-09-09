@@ -66,18 +66,18 @@
                         </a>
                         <ul class="drop-down-menu">
                             <li>
-                                <a v-on:click="scrollToContact">
-                                    PLAYLIST
+                                <a href="#">
+                                    IMPRIMIR
                                 </a>
                             </li>
                             <li>
                                 <a v-on:click="scrollToStoryLine">
-                                    STORY LINE
+                                    NUESTRA HISTORIA
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    IMPRIMIR
+                                <a v-on:click="scrollToContact">
+                                    PLAYLIST
                                 </a>
                             </li>
                         </ul>
