@@ -31,7 +31,7 @@
                     <!-- form -->
                     <form v-if="flag === 1">
                         <p class="input-space">
-                            Usted cuenta con {{guest.plusone}} asientos.
+                            Usted cuenta con {{guest.plusone}} espacios.
                         </p>
                         <div class="form-group">
                             <div class="row">

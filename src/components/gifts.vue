@@ -14,7 +14,7 @@
                     <div class="ceremony margin-bottom">
                         <div class="row">
                             <div class="col-sm">
-                                <h2 class="ceremony-text-space ceremony-text-size">El mejor regalo que podríamos tener es el poder compartir con nuestros seres queridos un día tan importante y de tanta alegría para nosotros.
+                                <h2 class="ceremony-text-space ceremony-text-size">El mejor regalo que podríamos tener es  poder compartir con nuestros seres queridos un día tan importante y de tanta alegría para nosotros.
                                 Si además quisieran llevar un obsequio, les agradeceríamos que fuera en efectivo.
                                 </h2>
                                 <h5>Para su comodidad hemos incluido los números de cuenta a los que podrían hacer llegar el depositó.</h5>
@@ -38,7 +38,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm">
-                                <h5>Esta información estará disponible a partir del jueves 18 de octubre al mediodía hasta el domingo 21 de octubre al mediodía.</h5>
+                                <h5>Esta información estará disponible a partir del jueves 18 de Octubre al mediodía hasta el domingo 21 de Octubre al mediodía.</h5>
                             </div>
                         </div>
                     </div>
