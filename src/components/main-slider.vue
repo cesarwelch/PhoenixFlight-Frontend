@@ -5,11 +5,11 @@
                 <a class="logo" href="#">
                     <img alt="Logo" src="../../src/assets/images/icons/Weddinglogo.png"/>
                 </a>
-                <div class="menu-nav-icon" data-nav-menu="#main-menu" @click="$set(mobileMenuControl, 'selected', !mobileMenuControl.selected)">
+                <div @click="$set(mobileMenuControl, 'selected', !mobileMenuControl.selected)" class="menu-nav-icon" data-nav-menu="#main-menu">
                     <i class="icon icon-bars">
                     </i>
                 </div>
-                <ul class="main-menu visible-on-click" id="main-menu" :class="{visible:mobileMenuControl.selected}">
+                <ul :class="{visible:mobileMenuControl.selected}" class="main-menu visible-on-click" id="main-menu">
                     <li>
                         <a>
                             INICIO
@@ -66,11 +66,6 @@
                         </a>
                         <ul class="drop-down-menu">
                             <li>
-                                <a href="#">
-                                    IMPRIMIR
-                                </a>
-                            </li>
-                            <li>
                                 <a v-on:click="scrollToStoryLine">
                                     NUESTRA HISTORIA
                                 </a>
@@ -78,6 +73,11 @@
                             <li>
                                 <a v-on:click="scrollToContact">
                                     PLAYLIST
+                                </a>
+                            </li>
+                            <li>
+                                <a v-on:click="print">
+                                    IMPRIMIR ESTA INIVITACIÓN
                                 </a>
                             </li>
                         </ul>
@@ -134,7 +134,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="title">
-                        Franklyn A. Fernández
+                        Franklyn Alfredo
                     </h1>
                 </div>
             </div>
@@ -148,7 +148,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="title slider-bot-space">
-                        María J. R. Cano
+                        María José
                     </h1>
                 </div>
             </div>
@@ -165,7 +165,9 @@
     </section>
 </template>
 <script>
+import axios from 'axios'
 var VueScrollTo = require('vue-scrollto')
+
 export default {
   name: 'mainSlider',
 
@@ -177,11 +179,23 @@ export default {
       mobileMenuControl: {}
     }
   },
+  props: ['guest'],
   methods: {
     displayMobileMenu: function (argument) {
     },
-    print: function (url) {
-      // printJS('./static/img/sky1.d26773d.jpg')
+    print: function (event) {
+      axios({
+        url: 'https://phoenixdawn.herokuapp.com/api/pdf/' + this.guest.plusone,
+        method: 'GET',
+        responseType: 'blob' // important
+      }).then((response) => {
+        const url = window.URL.createObjectURL(new Blob([response.data]))
+        const link = document.createElement('a')
+        link.href = url
+        link.setAttribute('download', 'invitation.pdf') // or any other extension
+        document.body.appendChild(link)
+        link.click()
+      })
     },
     scrollToHome: function (event) {
       VueScrollTo.scrollTo('#ceremony-comp', 500)

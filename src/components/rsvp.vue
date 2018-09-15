@@ -15,14 +15,14 @@
                     <div class="row">
                         <div class=" col-md-12 offset-sm-12 ">
                             <div class="confirm-button">
-                                <button class="btn-rsvp btn-primary" type="button" v-on:click="setYes">
+                                <button :disabled="guest.response !== null" class="btn-rsvp btn-primary" type="button" v-on:click="setYes">
                                     ¡Ahí estaré! 🙂
                                 </button>
                             </div>
                         </div>
                         <div class=" col-md-12  offset-sm-12 ">
                             <div class="confirm-button">
-                                <button class="btn-rsvp btn-primary" type="button" v-on:click="setNo">
+                                <button :disabled="guest.response !== null" class="btn-rsvp btn-primary" type="button" v-on:click="setNo">
                                     No podré asistir ☹️
                                 </button>
                             </div>
@@ -49,6 +49,9 @@
                     </form>
                     <!-- image-gallery -->
                 </div>
+                <div class="col-sm-12">
+                  <h3>{{answerMessage}}</h3>
+                </div>
                 <!-- col-sm-10 -->
             </div>
             <!-- row -->
@@ -66,9 +69,17 @@ export default {
   data () {
     return {
       flag: flag,
+      answerMessage: '',
       plusone: plusone,
       message: '',
       guests: []
+    }
+  },
+  mounted () {
+    if (this.guest.response === true) {
+      this.answerMessage = '¡Te esperamos!'
+    } else if (this.guest.response === false) {
+      this.answerMessage = 'Vamos a extrañarles'
     }
   },
   props: ['guest', 'items'],
@@ -85,7 +96,7 @@ export default {
         .put('https://phoenixdawn.herokuapp.com/api/guest/denyResponse', {
           id: this.guest.id
         }).then(response => {
-          console.log('Nay')
+          this.answerMessage = 'Vamos a extrañarles'
         })
     },
     send: function (event) {
@@ -95,7 +106,7 @@ export default {
           plusonelist: this.guests,
           id: this.guest.id
         }).then(response => {
-          console.log('YAY')
+          this.answerMessage = '¡Te esperamos!'
         })
     }
   }

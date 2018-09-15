@@ -1,7 +1,7 @@
 <template>
     <!-- Slideshow -->
     <div class="home">
-        <main-slider>
+        <main-slider :guest='guest'>
         </main-slider>
         <div v-if="path" >
             <!-- ceremony -->

@@ -17,15 +17,15 @@
                                 <h2 class="ceremony-text-space ceremony-text-size">El mejor regalo que podríamos tener es el poder compartir con nuestros seres queridos un día tan importante y de tanta alegría para nosotros.
                                 Si además quisieran llevar un obsequio, les agradeceríamos que fuera en efectivo.
                                 </h2>
-                                <h5>Para su comodidad hemos incluido los números de cuenta a los que podrían hacer llegar el deposito.</h5>
+                                <h5>Para su comodidad hemos incluido los números de cuenta a los que podrían hacer llegar el depositó.</h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="gift-space col-sm">
                             </div>
                         </div>
-                        <div class="row ceremony-text-space">
-                            <div class="col-sm">
+                        <div class="row">
+                            <div class="col-sm ceremony-text-space">
                                 <button class="btn btn-circle btn-xl" type="button">
                                     <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
                                 </button>
