@@ -17,7 +17,7 @@
                                 <h2 class="ceremony-text-space ceremony-text-size">El mejor regalo que podríamos tener es  poder compartir con nuestros seres queridos un día tan importante y de tanta alegría para nosotros.
                                 Si además quisieran llevar un obsequio, les agradeceríamos que fuera en efectivo.
                                 </h2>
-                                <h5>Para su comodidad hemos incluido los números de cuenta a los que podrían hacer llegar el depositó.</h5>
+                                <h5>Para su comodidad hemos incluido los números de cuenta a los que podrían hacer llegar el depósito.</h5>
                             </div>
                         </div>
                         <div class="row">
