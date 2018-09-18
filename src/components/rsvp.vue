@@ -8,7 +8,7 @@
                             Confirma tu asistencia
                         </h2>
                         <span class="heading-bottom">
-                            <img class="suculenta-icon" src="../../src/assets/images/weddingrings3.png">
+                            <img class="suculenta-icon" src="../../src/assets/images/weddingrings3.png"/>
                         </span>
                     </div>
                     <!-- Botones de confirmacion -->
@@ -20,7 +20,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class=" col-md-12  offset-sm-12 ">
+                        <div class=" col-md-12 offset-sm-12 ">
                             <div class="confirm-button">
                                 <button :disabled="guest.response !== null" class="btn-rsvp btn-primary" type="button" v-on:click="setNo">
                                     No podré asistir ☹️
@@ -35,22 +35,24 @@
                         </p>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-4 offset-md-4 col-sm-4 offset-sm-4 input-space" v-for="item in items" :key="item.message">
-                                    <input v-model="guests[item]" class="form-control" id="plusones" placeholder="Ingrese invitado">
+                                <div :key="item.message" class="col-md-4 offset-md-4 col-sm-4 offset-sm-4 input-space" v-for="item in items">
+                                    <input class="form-control" id="plusones" placeholder="Ingrese invitado" v-model="guests[item]"/>
                                 </div>
                             </div>
                         </div>
                         <button class="border-btn" type="button" v-on:click="send">
-                                    Enviar
-                                </button>
-                      <!--   <button class="border-btn" v-on:click="flag = 1">
+                            Enviar
+                        </button>
+                        <!--   <button class="border-btn" v-on:click="flag = 1">
                             Enviar
                         </button> -->
                     </form>
                     <!-- image-gallery -->
                 </div>
                 <div class="col-sm-12">
-                  <h3>{{answerMessage}}</h3>
+                    <h3>
+                        {{answerMessage}}
+                    </h3>
                 </div>
                 <!-- col-sm-10 -->
             </div>
@@ -61,6 +63,7 @@
 </template>
 <script>
 import axios from 'axios'
+import Swal from 'sweetalert2'
 var plusone = 0
 var flag = 0
 
@@ -100,14 +103,20 @@ export default {
         })
     },
     send: function (event) {
-      axios
-        .put('https://phoenixdawn.herokuapp.com/api/guest/updateGuestList', {
-          response: true,
-          plusonelist: this.guests,
-          id: this.guest.id
-        }).then(response => {
-          this.answerMessage = '¡Te esperamos!'
-        })
+      console.log(this.guests)
+
+      if (Object.keys(this.guests).length === 0 && this.guests.constructor === Object) {
+        Swal('¡Ups!', '¿Olvidaste algo? Debes agregar tu nombre y los de tus acompañantes para confirmar asistencia.', 'error')
+      } else {
+        axios
+          .put('https://phoenixdawn.herokuapp.com/api/guest/updateGuestList', {
+            response: true,
+            plusonelist: this.guests,
+            id: this.guest.id
+          }).then(response => {
+            this.answerMessage = '¡Te esperamos!'
+          })
+      }
     }
   }
 }
