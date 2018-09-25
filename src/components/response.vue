@@ -1,5 +1,5 @@
 <template>
-  <b-table striped hover :items="items"></b-table>
+  <b-table striped hover :items="items" :fields="fields"></b-table>
 </template>
 
 <script>
@@ -19,7 +19,33 @@ export default {
   },
   data () {
     return {
-      items: items
+      items: items,
+      fields: [
+        {
+          key: 'id',
+          sortable: true
+        },
+        {
+          key: 'name',
+          label: 'nombre',
+          sortable: true
+        },
+        {
+          key: 'response',
+          label: 'respuesta',
+          sortable: true
+        },
+        {
+          key: 'plusonelist',
+          sortable: true,
+          label: 'lista de invitados'
+        },
+        {
+          key: 'invitationsent',
+          label: 'invitacion enviada?',
+          sortable: true
+        }
+      ]
     }
   }
 }
