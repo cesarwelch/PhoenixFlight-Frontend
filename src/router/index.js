@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import axios from 'axios'
 import home from '@/components/home'
+import response from '@/components/response'
 
 Vue.use(Router)
 let routes = [{
@@ -15,6 +16,10 @@ let routes = [{
 }, {
   path: '*',
   component: home
+}, {
+  name: 'List',
+  path: '/guest/responses/10',
+  component: response
 }]
 
 let router = new Router({
