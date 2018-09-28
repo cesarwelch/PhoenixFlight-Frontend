@@ -514,3 +514,9 @@ footer .copyright{ padding: 20px 0 30px; }
 .mobile-z-test{
 	z-index: -1;
 }
+
+
+.response-table {
+	overflow-x: auto;
+    height: 100vh;
+}

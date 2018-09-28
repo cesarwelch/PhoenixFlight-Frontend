@@ -1,5 +1,20 @@
 <template>
+  <div class="response-table">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-1">
+          <b-button @click.stop="add" :variant="primary">
+            Add
+          </b-button>
+        </div>
+      </div>
+    </div>
     <b-table :fields="fields" :items="items" hover="" striped="">
+      <template slot="edit" slot-scope="row">
+        <b-button size="sm" @click.stop="edit(row)" variant="danger">
+          Edit
+        </b-button>
+      </template>
       <template slot="reset" slot-scope="row">
         <b-button size="sm" @click.stop="reset(row)" variant="danger">
           Reset
@@ -11,12 +26,12 @@
         </b-button>
       </template>
     </b-table>
+  </div>
 </template>
 <script>
 import axios from 'axios'
 import Swal from 'sweetalert2'
 let items = [
-
 ]
 export default {
   name: 'response',
@@ -35,13 +50,23 @@ export default {
         label: 'respuesta',
         sortable: true
       }, {
+        key: 'plusone',
+        sortable: true,
+        label: 'espacios'
+      }, {
         key: 'plusonelist',
         sortable: true,
         label: 'lista de invitados'
       }, {
-        key: 'invitationsent',
-        label: 'invitacion enviada?',
-        sortable: true
+        key: 'email',
+        sortable: true,
+        label: 'email'
+      }, {
+        key: 'url',
+        label: 'url'
+      }, {
+        key: 'edit',
+        label: 'edit'
       }, {
         key: 'reset',
         label: 'reset'
@@ -54,6 +79,7 @@ export default {
   mounted () {
     axios.get('https://phoenixdawn.herokuapp.com/api/filteredlist').then(response => {
       this.items = response.data
+      console.log(this.items)
     })
   },
   methods: {
@@ -79,8 +105,74 @@ export default {
               )
             }
             let rowItem = this.search(event.item.id, this.items)
-            rowItem.invitationsent = true
+            rowItem.response = null
+            rowItem.plusonelist = '{}'
           })
+      })
+    },
+    add: function (event) {
+      Swal({
+        title: 'Agregar',
+        showCancelButton: true,
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Agregar',
+        html:
+         '<input id="swal-input1" placeholder="Name" class="swal2-input">' +
+         '<input id="swal-input2" placeholder="Spaces" class="swal2-input">' +
+         '<input id="swal-input3" placeholder="Email" class="swal2-input">',
+        focusConfirm: false,
+        preConfirm: () => {
+          let editValues = {
+            name: document.getElementById('swal-input1').value,
+            email: document.getElementById('swal-input3').value,
+            response: null,
+            plusone: document.getElementById('swal-input2').value,
+            plusonelist: '{}',
+            invitationsent: false
+          }
+          axios
+            .post('https://phoenixdawn.herokuapp.com/api/guest', editValues).then(response => {
+              Swal(
+                'Done!',
+                'Your guest has been added.',
+                'success'
+              )
+              this.items.push(response.data)
+            })
+        }
+      })
+    },
+    edit: function (event) {
+      Swal({
+        title: 'Editar',
+        showCancelButton: true,
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Editar',
+        html:
+         '<input id="swal-input1" value="' + event.item.name + '" placeholder="Name" class="swal2-input">' +
+         '<input id="swal-input2" value="' + event.item.plusone + '" placeholder="Spaces" class="swal2-input">' +
+         '<input id="swal-input3" value="' + event.item.email + '" placeholder="Email" class="swal2-input">',
+        focusConfirm: false,
+        preConfirm: () => {
+          let editValues = {
+            name: document.getElementById('swal-input1').value,
+            plusone: document.getElementById('swal-input2').value,
+            email: document.getElementById('swal-input3').value,
+            id: event.item.id
+          }
+          axios
+            .put('https://phoenixdawn.herokuapp.com/api/guest/update', editValues).then(response => {
+              Swal(
+                'Done!',
+                'Your guest has been edited.',
+                'success'
+              )
+              let rowItem = this.search(event.item.id, this.items)
+              rowItem.name = editValues.name
+              rowItem.plusone = editValues.plusone
+              rowItem.email = editValues.email
+            })
+        }
       })
     },
     send: function (event) {
@@ -106,8 +198,7 @@ export default {
               )
             }
             let rowItem = this.search(event.item.id, this.items)
-            rowItem.response = null
-            rowItem.plusonelist = '{}'
+            rowItem.invitationsent = true
           })
       })
     },
