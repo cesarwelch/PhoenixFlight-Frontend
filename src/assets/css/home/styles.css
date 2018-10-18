@@ -520,3 +520,7 @@ footer .copyright{ padding: 20px 0 30px; }
 	overflow-x: auto;
     height: 100vh;
 }
+
+.cuentas {
+    font-size: .7em!important;
+}

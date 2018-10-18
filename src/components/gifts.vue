@@ -25,14 +25,20 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm ceremony-text-space">
-                                <button class="btn btn-circle btn-xl" type="button">
-                                    <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
+                            <div  class="col-sm ceremony-text-space">
+                                <button @mouseleave="hideAccount1" @mouseover="viewAccount1" class="btn btn-circle btn-xl" type="button">
+                                    <img v-if="flag1" alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
+                                    <h5 class="cuentas" v-if="!flag1">María José</h5>
+                                    <h5 class="cuentas" v-if="!flag1">Rivera Cano</h5>
+                                    <h5 class="cuentas" v-if="!flag1">$ 740973711</h5>
                                 </button>
                             </div>
-                            <div class="col-sm">
-                                <button class="btn btn-circle btn-xl" type="button">
-                                    <img alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
+                            <div  class="col-sm">
+                                <button @mouseleave="hideAccount2" @mouseover="viewAccount2" class="btn btn-circle btn-xl" type="button">
+                                    <img v-if="flag2" alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
+                                    <h5 class="cuentas" v-if="!flag2">Franklyn Alfredo</h5>
+                                    <h5 class="cuentas" v-if="!flag2">Fernández Sabillón</h5>
+                                    <h5 class="cuentas" v-if="!flag2">Lps 727200791</h5>
                                 </button>
                             </div>
                         </div>
@@ -51,19 +57,29 @@
     </section>
 </template>
 <script>
-var flag = 0
+var flag = 1
 export default {
 
   name: 'gifts',
 
   data () {
     return {
-      flag: flag
+      flag1: flag,
+      flag2: flag
     }
   },
   methods: {
-    viewAccount: function (event) {
-      this.flag = 1
+    viewAccount1: function (event) {
+      this.flag1 = 0
+    },
+    viewAccount2: function (event) {
+      this.flag2 = 0
+    },
+    hideAccount1: function (event) {
+      this.flag1 = 1
+    },
+    hideAccount2: function (event) {
+      this.flag2 = 1
     }
   }
 }
