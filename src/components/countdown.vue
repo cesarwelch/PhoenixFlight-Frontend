@@ -19,25 +19,25 @@
                         <div id="clock">
                             <div class="time-sec">
                                 <span class="title">
-                                    {{days}}
+                                    0
                                 </span>
                                 dias
                             </div>
                             <div class="time-sec">
                                 <span class="title">
-                                    {{hours}}
+                                    0
                                 </span>
                                 horas
                             </div>
                             <div class="time-sec">
                                 <span class="title">
-                                    {{minutes}}
+                                    0
                                 </span>
                                 minutos
                             </div>
                             <div class="time-sec">
                                 <span class="title">
-                                    {{seconds}}
+                                    0
                                 </span>
                                 segundos
                             </div>

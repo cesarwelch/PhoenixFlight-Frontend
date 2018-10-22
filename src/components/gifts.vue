@@ -30,7 +30,7 @@
                                     <img v-if="flag1" alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
                                     <h5 class="cuentas" v-if="!flag1">María José</h5>
                                     <h5 class="cuentas" v-if="!flag1">Rivera Cano</h5>
-                                    <h5 class="cuentas" v-if="!flag1">$ 740973711</h5>
+                                    <h5 class="cuentas" v-if="!flag1">$ </h5>
                                 </button>
                             </div>
                             <div @mouseleave="hideAccount" class="col-sm">
@@ -38,7 +38,7 @@
                                     <img v-if="flag2" alt="Gallery Image" class="image-bac-icon" src="../../src/assets/images/icons/bac3.png"/>
                                     <h5 class="cuentas" v-if="!flag2">Franklyn Alfredo</h5>
                                     <h5 class="cuentas" v-if="!flag2">Fernández Sabillón</h5>
-                                    <h5 class="cuentas" v-if="!flag2">Lps 727200791</h5>
+                                    <h5 class="cuentas" v-if="!flag2">Lps </h5>
                                 </button>
                             </div>
                         </div>
